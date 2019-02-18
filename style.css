@@ -259,8 +259,8 @@ nav .soc {
           margin-top: 15rem; }
           #hero .container div.scroll p {
             margin-bottom: -28px; }
-          #hero .container div.scroll a img {
-            margin-bottom: -3rem; } }
+          #hero .container div.scroll  {
+            margin-bottom: 6rem; } }
   @media only screen and (max-width: 1400px) {
     #hero {
       background-image: url(image/hero-image2.png);
