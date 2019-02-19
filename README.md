@@ -14,7 +14,7 @@ or super css technique, which is located on the Ruby platform.
 - <em>variable.scss</em>
 - <em>grid_system.scss</em>
 
-In the compilation process we get the style.css file,
+In the compilation process we get the <em>style.css file</em>,
 which is located on the index.html page.
 
 The head tag contain source fonts for the font.
