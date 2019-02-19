@@ -3,13 +3,13 @@
 The project consists of several parts,
 which make up the portfolio.
 
-In respositor you can find <em style="background: #ccc;">html, csc, scs, js</em> files
+In respositor you can find <markhtml, csc, scs, js</mark> files
 with two directories containing image files jpg and png.
 
 The website was developed using <em>HTML5 and SASS / LESS</em> preprocessor technology
 or super css technique, which is located on the Ruby platform.
  
- It consists of three writings:
+ <strong>It consists of three writings:</strong>
 - style.scss
 - variable.scss
 - grid_system.scss
