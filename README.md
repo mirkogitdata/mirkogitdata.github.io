@@ -3,7 +3,7 @@
 The project consists of several parts,
 which make up the portfolio.
 
-In respositor you can find <em>hTML, CSS, SCSS, JS</em> files
+In respositor you can find <em>HTML, CSS, SCSS, JS</em> files
 with two directories containing image files jpg and png.
 
 The website was developed using <em>HTML5 and SASS / LESS</em> preprocessor technology
