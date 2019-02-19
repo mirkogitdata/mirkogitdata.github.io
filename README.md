@@ -22,7 +22,7 @@ Then aos, jquery, animatescroll codes for site integration.
 
 At the bottom of the page are four JavaScript files,
 which perform the functions I have rendered.
-And at the very end is aos.init (),
+And at the very end is 'aos.init ()',
 which causes you to perform the animation feature on the page.
 
 In the portfolio section there are 6 products,
