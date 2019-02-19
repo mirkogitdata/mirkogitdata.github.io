@@ -3,7 +3,7 @@
 The project consists of several parts,
 which make up the portfolio.
 
-In respositor you can find <markhtml, csc, scs, js</mark> files
+In respositor you can find <mark>html, csc, scs, js</mark> files
 with two directories containing image files jpg and png.
 
 The website was developed using <em>HTML5 and SASS / LESS</em> preprocessor technology
