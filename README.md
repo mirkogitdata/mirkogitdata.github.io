@@ -6,7 +6,7 @@ which make up the portfolio.
 In respositor you can find html, csc, scs, js files
 with two directories containing image files jpg and png.
 
-The website was developed using <mark><em>HTML5 and SASS / LESS</em></mark> preprocessor technology
+The website was developed using <mark>HTML5 and SASS / LESS</mark> preprocessor technology
 or super css technique, which is located on the Ruby platform.
  
  It consists of three writings:
