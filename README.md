@@ -1,4 +1,4 @@
-Portfolio description
+<h2>Portfolio description</h2>
 
 The project consists of several parts,
 which make up the portfolio.
