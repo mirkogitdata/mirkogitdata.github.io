@@ -30,7 +30,7 @@ which open links to three <em>html</em> pages and three <em>pdf</em> pages.
 I did not use the Boostrap framework because I wanted to highlight my <em>SASS/LESS</em> capabilities
 and using GRID for a vised-dimensional layout.
 
-The site is developed with semantic tags in html.
+The site is developed with semantic tags in <em>html.</em>
 For better SEO placement. It is also optimized on the <em>PNG, JPG</em> file size.
 It is customizable for many devices,
 because we are in the first period of mobile displaying.
