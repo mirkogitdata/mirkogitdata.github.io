@@ -10,9 +10,9 @@ The website was developed using <em>HTML5 and SASS / LESS</em> preprocessor tech
 or super css technique, which is located on the Ruby platform.
  
  <strong>It consists of three writings:</strong>
-- style.scss
-- variable.scss
-- grid_system.scss
+- <em>style.scss</em>
+- <em>variable.scss</em>
+- <em>grid_system.scss</em>
 
 In the compilation process we get the style.css file,
 which is located on the index.html page.
