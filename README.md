@@ -32,7 +32,7 @@ and using GRID for a vised-dimensional layout.
 
 The site is developed with semantic tags in <em>html.</em>
 For better <em>SEO</em> placement. It is also optimized on the <em>PNG, JPG</em> file size.
-It is customizable for many device with responsive lines of code(media queries variables).
+It is customizable for many device with responsive lines of code(media queries variables and GRID system).
 Because we are in the first period of mobile displaying.
 
 In short, about my portfolio.
