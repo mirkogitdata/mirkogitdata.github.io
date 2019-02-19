@@ -27,7 +27,7 @@ which causes you to perform the animation feature on the page.
 In the portfolio section there are 6 products,
 which open links to three html pages and three pdf pages.
 
-I did not use the Boostrap framework because I wanted to highlight my <em>SASS/LESS</em>capabilities
+I did not use the Boostrap framework because I wanted to highlight my <em>SASS/LESS</em> capabilities
 and using GRID for a vised-dimensional layout.
 
 The site is developed with semantic tags in html.
