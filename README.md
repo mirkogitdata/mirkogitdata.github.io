@@ -33,6 +33,6 @@ and using GRID for a vised-dimensional layout.
 The site is developed with semantic tags in html.
 For better SEO placement. It is also optimized on the PNG, JPG file size.
 It is customizable for many devices,
-because we are in the first period of mobile imaging.
+because we are in the first period of mobile displaying.
 
 In short, about my portfolio.
