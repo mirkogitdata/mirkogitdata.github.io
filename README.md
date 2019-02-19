@@ -9,7 +9,7 @@ with two directories containing image files <em>jpg</em> and <em>png.</em>
 The website was developed using <em>HTML5 and SASS / LESS</em> preprocessor technology
 or super css technique, which is located on the Ruby platform.
  
- <h3>It consists of three writings:</h3>
+ <strong>It consists of three writings:</strong>
 - <em>style.scss</em>
 - <em>variable.scss</em>
 - <em>grid_system.scss</em>
