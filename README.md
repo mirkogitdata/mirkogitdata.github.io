@@ -17,7 +17,7 @@ or super css technique, which is located on the Ruby platform.
 In the compilation process we get the style.css file,
 which is located on the index.html page.
 
-The <head></ head> section contains source fonts for the font.
+The head tag contain source fonts for the font.
 Then aos, jquery, animatescroll codes for site integration.
 
 At the bottom of the page are four JavaScript files,
