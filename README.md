@@ -36,4 +36,4 @@ For better SEO placement. It is also optimized on the PNG, JPG file size.
 It is customizable for many devices,
 because we are in the first period of mobile imaging.
 
-In short, about my portfolio,
+In short, about my portfolio.
