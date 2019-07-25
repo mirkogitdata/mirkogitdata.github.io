@@ -103,7 +103,7 @@ class TypeWriter {
       typeSpeed = 500;
     }
 
-    setTimeout(() => this.type(), typeSpeed);
+    setTimeout(function() this.type(), typeSpeed);
   }
 }
 
