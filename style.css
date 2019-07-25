@@ -212,7 +212,7 @@ nav .soc {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 768px; }
+  height: 100vh; }
   @media only screen and (max-width: 1600px) {
     #hero {
       background-image: url(image/hero-image2.png);
@@ -220,11 +220,11 @@ nav .soc {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 768px;
+      height: 100vh;
       background-size: cover;
       background-attachment: fixed;
       background-position: center center;
-      height: 768px; }
+      height: 100vh; }
       #hero .container {
         font-size: 0;
         box-sizing: border-box;
@@ -268,10 +268,10 @@ nav .soc {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 768px;
+      height: 100vh;
       background-size: cover;
       background-position: -400px -200px;
-      height: 540px; }
+      height: 100vh; }
       #hero .container {
         font-size: 0;
         box-sizing: border-box;
@@ -314,10 +314,10 @@ nav .soc {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 768px;
+      height: 100vh;
       background-size: cover;
       background-position: -300px -200px;
-      height: 540px; }
+      height: 100vh; }
       #hero .container {
         font-size: 0;
         box-sizing: border-box;
@@ -358,11 +358,11 @@ nav .soc {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 768px;
+      height: 100vh;
       background-size: cover;
       background-attachment: scroll;
       background-position: center bottom;
-      height: 480px; }
+      height: 100vh; }
       #hero .container {
         font-size: 0;
         box-sizing: border-box;
@@ -409,11 +409,11 @@ nav .soc {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 768px;
+      height: 100vh;
       background-size: cover;
       background-attachment: scroll;
       background-position: center bottom;
-      height: 510px; }
+      height: 100vh; }
       #hero .container {
         font-size: 0;
         box-sizing: border-box;
@@ -459,7 +459,7 @@ nav .soc {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      height: 768px;
+      height: 100vh;
       background-attachment: scroll;
       background-size: cover;
       background-position: center bottom;
