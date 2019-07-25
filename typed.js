@@ -1,4 +1,4 @@
-// const TypeWriter = (txtElement, words, wait = 3000) => {
+// const TypeWriter = function(txtElement, words, wait = 3000) {
 //   this.txtElement = txtElement;
 //   this.words = words;
 //   this.txt = '';
@@ -9,7 +9,7 @@
 // }
 
 // // Type Method
-// TypeWriter.prototype.type = () => {
+// TypeWriter.prototype.type = function() {
 //   // Current index of word
 //   const current = this.wordIndex % this.words.length;
 //   // Get full text of current word
@@ -48,7 +48,7 @@
 //     typeSpeed = 500;
 //   }
 
-//   setTimeout(() => this.type(), typeSpeed);
+//   setTimeout(function() this.type(), typeSpeed);
 // }
 
 
