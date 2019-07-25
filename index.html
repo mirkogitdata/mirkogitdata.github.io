@@ -228,16 +228,16 @@
 <!-- NAVBAR-MENU ON CLICK -->		
 <script type="text/javascript">
         
-        (function() {
+        (()=> {
             var bodyEl = $('body'),
                 navToggleBtn = bodyEl.find('.nav-toggle-btn'),
 		menuLink = bodyEl.find('nav ul li a');
 			
-            navToggleBtn.on('click', function(e) {
+            navToggleBtn.on('click', (e)=> {
                 bodyEl.toggleClass('active-nav');
                 e.preventDefault();
             });
-            menuLink.on('click', function() {
+            menuLink.on('click', ()=> {
 			bodyEl.toggleClass('active-nav').style.display = "none"; //=== return nav to position right: 0;
 			});
         })();  
