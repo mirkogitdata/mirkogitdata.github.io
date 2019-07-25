@@ -112,7 +112,7 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init);
 
 // Init App
- init() => {
+ init function() {
   const txtElement = document.querySelector('.txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
   const wait = txtElement.getAttribute('data-wait');
