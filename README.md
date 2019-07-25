@@ -16,7 +16,7 @@ or super css technique, which is located on the Ruby platform.
 
 In the compilation process we get the <em>style.css file</em>,
 which is located on the <em>index.html</em> page.
-he head tag contain source fonts for the font.
+The head tag contain source fonts for the font.
 Then aos, jquery, animatescroll codes for site integration.
 
 At the bottom of the page are four JavaScript files,
@@ -33,7 +33,7 @@ and using GRID for a vised-dimensional layout.
 The site is developed with semantic tags in <em>html.</em>
 For better <em>SEO</em> placement. It is also optimized on the <em>PNG, JPG</em> file size.
 
-It is customizable for many device with responsive lines of code(media queries variables and GRID system).
+It is customizable for many device with responsive lines of code(media queries variables and GRID).
 Because we are in the first period of mobile displaying.
 
 In short, about my portfolio.
