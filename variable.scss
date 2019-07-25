@@ -52,13 +52,10 @@ h6 { font-size: 10px; }
 h1, h2, h3, h4, h5 {
 	margin: 0.5rem 0;
 }
-
-
 .container {
     font-size: 1.3em;
 	padding: 4rem 0;
 }
-
 .cf {
 	&::after {
 		display: table;
@@ -66,25 +63,20 @@ h1, h2, h3, h4, h5 {
 		clear: both;
 	}
 }
-
 img {
     width: 100%;
     vertical-align: bottom;
 }	
   
 //======== NAVBAR ===========
-
 @mixin navbar-menu {
-	
 	   * {
                 margin: 0;
                 padding: 0;
             }
-            
             body {
                 overflow-x: hidden;
             }
-            
             nav {
                 position: fixed;
                 z-index: 1000;
@@ -101,10 +93,8 @@ img {
             }
             nav ul {
                 list-style: none;
-                margin-top: 14px;
-				
+                margin-top: 14px;		
             }
-	
 	    nav ul li {
 		display: inline-block;
                 width: 100%;
@@ -114,9 +104,7 @@ img {
                 transition: all 0.3s ease-in;
 	        text-align: center;
 	         }
-	
 	    nav ul li:nth-of-type(2n) {
-                
                }
 	    nav ul li:hover {
                 background: #4362ce;
@@ -151,7 +139,6 @@ img {
             }
 	
 	.active-nav {
-		
 	}
             .active-nav #hero, .active-nav #about, .active-nav #skills, .active-nav #services, .active-nav #portfolio, .active-nav #contact, .active-nav footer {
                 transform: translateX(-250px);
@@ -160,9 +147,7 @@ img {
          #hero, #about, #skills, #services, #portfolio, #contact, footer {
 		       transition: all 0.4s ease;
 	        }
-            
 }
-
 //========= HERO =======
 @mixin hero {
 	background-image: url(lib/sass/portfolio/image/hero-image2.png);
@@ -172,26 +157,20 @@ img {
 	background-size: cover;
 	height: 768px;
 }
-
 @mixin name {
 	text-shadow: 2px 0.2px;
 }
-
 @mixin sub-name {
 	//color: darken($text-fff, 33%);
 	color: lighten($color-secondary, 17%);
 	text-transform: uppercase;
 }
-
 @mixin scroll-text {
 	text-transform: uppercase;
 	color: lighten($color-secondary, 35%);
 	letter-spacing: .4px;
 }
-
 @mixin scroll {
-	
-
 
 }
 
@@ -203,7 +182,6 @@ img {
   text-transform: uppercase;
   margin-top: -1.2rem;	
 }
-
 @mixin h2-monoton {
 	background: $color-secondary;
 	color: $text-fff;
@@ -213,7 +191,6 @@ img {
     border-bottom-left-radius: 10px;
 	margin-right: 0.5rem;
 }
-
 @mixin h2-monoton2 {
 	background: $color-primary;
 	color: $text-fff;
@@ -224,7 +201,6 @@ img {
 	margin-left: 0.5rem;
 	margin-right: 0;
 }
-
 @mixin about-up {
 	font-weight: 600;
 	margin-top: 5rem;
@@ -266,21 +242,16 @@ img {
     background: rgba(35, 38, 59, 0.06);
     padding-bottom: 2.5rem
 }	
-   
-
 @mixin h2-span {
 	padding: 1px 4px;
 	background: $color-secondary;
 	color: $text-fff;
 }
-
 @mixin h2-sub {
    font-size: 26px;
 	font-style: italic;
 	padding-top: 2rem;
 }
-
-
 @mixin skill-li {
 	text-align: left;
 	position: relative;
@@ -301,7 +272,6 @@ img {
 @mixin footer {
 	background: #23263b;
 }
-
 @mixin soc-img {
       background: rgba(255, 255, 255, 0.8);
       width: 44px;
@@ -310,38 +280,32 @@ img {
       border-radius: 14px;
       border: 2px solid rgba(255, 255, 255, 0.3);
 }
-
 /*Media Queries - Responsive*/
 @mixin tiny-screens() {
 	@media only screen and (max-width: 560px) {
 		@content;
 	}
 }
-
 @mixin small-screens() {
 	@media only screen and (max-width: 768px) {
 		@content;
 	}
 }
-
 @mixin medium-screens() {
 	@media only screen and (max-width: 995px) {
 		@content;
 	}
 }
-
 @mixin large-screens() {
 	@media only screen and (max-width: 1200px) {
 		@content;
 	}
 }
-
 @mixin xl-screens() {
 	@media only screen and (max-width: 1400px) {
 		@content;
 	}
 }
-
 @mixin desktop-screens() {
 	@media only screen and (max-width: 1600px) {
 		@content;
