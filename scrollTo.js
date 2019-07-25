@@ -1,4 +1,4 @@
- function scrollTo(id) {
+  scrollTo(id) =>{
 		 
 		 if($(id).length) {
 			 
@@ -14,7 +14,7 @@
 		 
 	 }
 	 
-	 $('.scrollTo').click(function() {
+	 $('.scrollTo').click(()=> {
 		 
 		 var getElement = $(this).attr('href');
 		 
