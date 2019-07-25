@@ -211,8 +211,8 @@
 	       <h3><span>W</span>ant to work with me?</h3>
 		<p class="h2-sub">Send email to mirkoduartes@gmail.com</p>
 		<div class="soc">
-			          <h5>Social connection</h5>
-        	          <a href="https://www.linkedin.com/in/mirkozivicintro/" target="_blank"><img  src="image/linkedin.png" alt=""></a>
+		      <h5>Social connection</h5>
+        	      <a href="https://www.linkedin.com/in/mirkozivicintro/" target="_blank"><img  src="image/linkedin.png" alt=""></a>
     	              <a href="https://github.com/mirkogitdata" target="_blank"><img src="image/github.png" alt=""></a>
     	              <a href="https://www.behance.net/search?content=projects&sort=appreciations&time=week&featured_on_behance=true&search=front%20end%20development" target="_blank"><img src="image/behance.png" alt=""></a> 
         </div> <!--end .soc -->
@@ -227,26 +227,18 @@
 	
 <!-- NAVBAR-MENU ON CLICK -->		
 <script type="text/javascript">
-        
         (function() {
-            
             var bodyEl = $('body'),
                 navToggleBtn = bodyEl.find('.nav-toggle-btn'),
-				menuLink = bodyEl.find('nav ul li a');
-			
+	        menuLink = bodyEl.find('nav ul li a');
             navToggleBtn.on('click', function(e) {
                 bodyEl.toggleClass('active-nav');
                 e.preventDefault();
             });
-            
             menuLink.on('click', function() {
-				
 				bodyEl.toggleClass('active-nav').style.display = "none"; //=== return nav to position right: 0;
-				
 			});
-			
         })();  
-        
 </script>
 
 <!-- SCROLL-TO-->
@@ -254,16 +246,13 @@
 	
 <!-- SCROLL-ME-->
 <script src="scrollMe.js" type="text/javascript"></script>
-	
-	
+
 <!-- Animation on scroll -->    
  
 <script src="aos.js"></script> 
     
 <script>
-    
     AOS.init();
-    
 </script> 
 	
 <script src="typed.js"></script>
