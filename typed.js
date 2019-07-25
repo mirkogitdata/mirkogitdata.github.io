@@ -1,4 +1,4 @@
-// const TypeWriter = function(txtElement, words, wait = 3000) {
+// const TypeWriter = (txtElement, words, wait = 3000) => {
 //   this.txtElement = txtElement;
 //   this.words = words;
 //   this.txt = '';
@@ -9,7 +9,7 @@
 // }
 
 // // Type Method
-// TypeWriter.prototype.type = function() {
+// TypeWriter.prototype.type = () => {
 //   // Current index of word
 //   const current = this.wordIndex % this.words.length;
 //   // Get full text of current word
@@ -112,7 +112,7 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init);
 
 // Init App
-function init() {
+ init() => {
   const txtElement = document.querySelector('.txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
   const wait = txtElement.getAttribute('data-wait');
