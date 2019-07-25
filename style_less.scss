@@ -2,14 +2,12 @@
 @import "grid_system";
 
 body {
-    
     margin: 0;
     padding: 0;
     color: $text-fff;
-	font-family: $text-font;
-	text-align: center;
+    font-family: $text-font;
+    text-align: center;
 }
-
 a {
 	&:link {
 		text-decoration: none;
@@ -36,31 +34,25 @@ a {
 @include navbar-menu; //=== NAVBAR PROPERTIES(variable.scss) ====
 
 nav {
-	
 	@include large-screens {
-		
 		div.soc {
 		margin-top: 2.5rem; }
 }
 	@include small-screens {
-		
 		 a .nav-toggle-btn {
                 display: block;
                 position: absolute;
-				top: 20px; 
+		top: 20px; 
                 right: 270px;
                 width: 31px;
                 height: 32px;
                 transition: 0.1s ease-out all; }
-		
 		a .nav-toggle-btn:hover {
 		
 		          width: 32px;
 				height: 33px;
 	          }
-		
 		ul li {
-			
 			margin-bottom: -5px; }
 	}
 	@include tiny-screens {
@@ -68,7 +60,7 @@ nav {
 		 a .nav-toggle-btn {
                 display: block;
                 position: absolute;
-				top: 20px; 
+		top: 20px; 
                 right: 270px;
                 width: 27px;
                 height: 28px;
@@ -76,15 +68,12 @@ nav {
 		
 		a .nav-toggle-btn:hover {
 		
-		          width: 28px;
-				height: 29px;
+		        width: 28px;
+			height: 29px;
 		}
-		
-		
 		div.soc {
 		
 		a {
-			
 			img {
 				
 				@include soc-img;
@@ -102,11 +91,9 @@ nav {
 }
 		
 	.soc {
-		
 		a {
 			
 			img {
-				
 				@include soc-img;
 				display: block;
 				margin-bottom: 2rem;
@@ -115,57 +102,34 @@ nav {
 				left: 94px;
 			}
 		}
-		
 		margin-top: 7rem;
-		
 	}
 }
 
 //======== HERO =========
 #hero {
-	
 	@include desktop-screens {
-		
 		.container {
-			
 			@include row();
-			
 			h1.name {
-				
-				
 				font-size: 4em;
-			
 			}
-			
 			h4.sub-name {
-				
 				font-size: 2.1em;
 			}
 			div.scroll {
-				
 			   margin-top: 15rem;
-				
 				p {
-					
-                   margin-bottom: -28px;
+                                   margin-bottom: -28px;
 				}
 				a {
-					
 					img {
-						
-						margin-bottom: -3rem;
+						bottom: -3rem;
 					}
 				}
-				
-			   
 			}
-			
 			position: relative;
-			
-				
-		   
 		}
-		
 		@include hero;
 		background-size: cover;
 		background-attachment: fixed;
@@ -174,34 +138,22 @@ nav {
 	}
 	
 	@include xl-screens {
-		
 		.container {
-			
 			@include row();
-			
 			h1.name {
-				
 				margin-top: -10rem;
 				font-size: 2.8em;
-				
 			}
-			
 			h4.sub-name {
-				
 				font-size: 1.7em;
 				padding-bottom: 9rem;
 			}
-			
 			div.scroll {
-				
-			   margin-top: 1.5rem;	
-			
+			   margin-top: 1.5rem;
 			}
-			
 			position: relative;
 			top: -70px;
 		}
-		
 		@include hero;
 		background-size: cover;
 		background-position: -400px -200px;
@@ -209,81 +161,50 @@ nav {
 	}
 	
 	@include large-screens {
-		
 		.container {
-			
 			@include row();
-			
 			h1.name {
-				
 				margin-top: -5rem;
 				font-size: 2.8em;
-				
 			}
-			
 			h4.sub-name {
-				
 				font-size: 1.5em;
 				padding-bottom: 14rem;
 			}
 			
 			div.scroll {
-				
 			   margin-top: -4.5rem;	
-			
 			}
-			
-			
 		}
-		
 		@include hero;
 		background-size: cover;
 		background-position: -300px -200px;
 		height: 540px;
 	}
-	
 	@include medium-screens {
-		
 		.container {
-			
 			@include row();
-			
 			h1.name {
-				
 				margin-top: 0rem;
 				font-size: 2.8em;
-				
 			}
-			
 			h4.sub-name {
-				
 				font-size: 1.5em;
 				padding-bottom: 9rem;
 			}
-			
 			div.scroll {
-				
 			   margin-top: -2rem;	
 			   p {
-					
-					font-size: .8em;
+				 font-size: .8em;
 				}
-				
 			   a {
-				
 				img {
-				
 				    width: 56px;
 				    height: 34px;
-					cursor: pointer;
-					
+				    cursor: pointer;	
 			      }
 			   }
-				
-			
 			}
-			
-			
 		}
 		@include hero;
 		background-size: cover;
@@ -291,47 +212,29 @@ nav {
 		background-position: center bottom;
 		height: 480px;
 	}
-	
 	@include small-screens {
-		
 		.container {
-			
 			@include row();
-			
 			h1.name {
-				
 				margin-top: 0rem;
 				font-size: 2.2em;
-				
 			}
-			
 			h4.sub-name {
-				
 				font-size: 1.3em;
-				
 			}
-			
 		     div.scroll {
-				
 			   margin-top: 2rem;
-				
 				p {
-					
-					font-size: .7em;
+				    font-size: .7em;
 				}
-				
 			   a {
-				
 				img {
-				
 				    width: 54px;
 				    height: 31px;
-					cursor: pointer;
+				    cursor: pointer;
 			      }
 			   }
 			}
-			
-			
 		}
 		@include hero;
 		background-size: cover;
@@ -339,326 +242,207 @@ nav {
 		background-position: center bottom;
 	    height: 510px;
 	}
-	
 	@include tiny-screens {
-		
 		.container {
-			
 			@include row();
-			
 			h1.name {
-				
-				
 				font-size: 2em;
 				margin-top: -4rem;
 			}
-			
 			h4.sub-name {
-				
 				font-size: 1.1em;
-				
 			}
-			
 		     div.scroll {
-				
-			  
-				
 				p {
-					
 					font-size: .6em;
 					margin-bottom: -2.5rem;
 				}
-				
 			   a {
-				
 				img {
 				
 				    width: 41px;
 				    height: 24px;
-					cursor: pointer;
+				    cursor: pointer;
 			      }
 			   }
-				 
 				 margin-top: 8rem;
-				
 			}
-			
 			position: relative;
 			top: -60px;
 		}
-		
 		@include hero;
 		background-attachment: scroll;
 		background-size: cover;
 		background-position: center bottom;
 		height: auto;
 	}
-	
-	
 	.container {
-		
 		@include row();
-		
 		h1.name {
-			
 			@include name;
-             margin-top: 16rem;
+                        margin-top: 16rem;
 			letter-spacing: 1px;
 		}
-		
 		.sub-name {
-			
 			@include sub-name;
 			.txt-type > .txt {
  	       /*border-right: 0.3rem solid #777;
             padding-right: .7rem;*/ }
-			
 			.dot {
                animation: blink 1s infinite;
 	           border-right: 0.3rem solid #889be0;
                 padding-right: .7rem; }
-			
 			   @keyframes blink {
 	           to {opacity: 0;}}
 		}
-		
 		.scroll {
-			
 			p {
-				
 				@include scroll-text;
 			}
 			
 			a {
-				
 				img {
-				
 				    width: 81px;
 				    height: 42px;
-					cursor: pointer;
+				    cursor: pointer;
 			      }
 			}
-			 
 			@include scroll;
 		}
-		
 		@include col(12,12);
 		position: relative;
 	}
-	
 	@include hero;
-   
 }
 
 //======= ABOUT =======
 #about {
-	
 	@include large-screens {
-		
 		@include row();
-		
 		.container {
-			
 			h2 {
-				
-				font-size: 2.2em;
+			   font-size: 2.2em;
 			}
-		
-			
 			div.about-text	{
-				
 				p.about-up {
 			
-		            font-size: 1.3em;
-					margin-top: 10.8rem;
-					line-height: 27px;
+		                   font-size: 1.3em;
+				   margin-top: 10.8rem;
+				   line-height: 27px;
 	               }
-				
 				p.about-down {
-					
 					 font-size: 1.3em;
 					line-height: 27px;
 				}
-				
-				
 			}
-		
        }
-	}
-	
+}
 	@include medium-screens {
-		
 		@include row();
-		
 		.container {
-			
 			h2 {
-				
 				font-size: 1.8em;
 			}
-			
 			div.profile {
-			
 			img {
-			
 			width: 380px;
 			border-radius: 6px;
-			
 		   }
-			
 			@include col(6,12);
 			float: left;
-		    width: 100%;
+		        width: 100%;
 			margin-top: 6rem;
 		}
-		
-		
 			div.about-text	{
-				
 				p.about-up {
-			
-		            font-size: 1.3em;
+		                        font-size: 1.3em;
 					margin-top: 3rem;
 					line-height: 29px;
 					text-align: center;
 	               }
-				
 				p.about-down {
-					
 					 font-size: 1.3em;
 					line-height: 29px;
 					text-align: center;
 				}
-				
 				.aboutButtons {
-					
 					text-align: center;
 					margin-bottom: 2rem;
 				}
-				
 				width: 520px;
 			}
-			
 		}
 	}
-	
 	@include small-screens {
-		
 		@include row();
-		
 		.container {
-			
 			h2 {
-				
-				font-size: 1.5em;
+			    font-size: 1.5em;
 			}
-			
 			div.profile {
-			
 			img {
-			
 			width: 60%;
 			border-radius: 6px;
 		   }
-			
 			@include col(6,12);
 			float: left;
 			margin-top: 6rem;
 		}
-		
-		
 			div.about-text	{
-				
 				p.about-up {
-			
-		            font-size: 1.2em;
+		                        font-size: 1.2em;
 					margin-top: 1rem;
 					line-height: 29px;
-					
 	               }
-				
 				p.about-down {
-					
 					 font-size: 1.2em;
 					line-height: 29px;
-					
 				}
-				
 				.aboutButtons {
-					
 					text-align: center;
 					margin-bottom: 2rem;
 				}
-				
 				width: 70%;
 			}
-			
-			
 		}
 	}
-	
 	@include tiny-screens {
-		
 		@include row();
-		
 		.container {
-			
 			h2 {
-				
 				font-size: 1.3em;
-				
 			}
-			
 			 div.profile {
-			
 			img {
-			
 			width: 100%;
 			border-radius: 6px;
 		   }
-			
 			@include col(6,12);
 			float: left;
 			margin-top: 4rem;
 		}
-		
-		
 			div.about-text	{
-				
 				p.about-up {
-			
 		            font-size: 1.1em;
 					margin-top: 1rem;
 					line-height: 28px;
-					
 	               }
-				
 				p.about-down {
-				
 					 font-size: 1.1em;
 					line-height: 28px;
-					
 				}
-				
 				.aboutButtons {
-					
 					text-align: center;
 					margin-bottom: 2rem;
-					
 					.button1 {
-						
 						display: block;
 						margin: 0 auto 2rem;					}
-					
 					.button2 {
-						
 						display: block;
 						margin: 2rem auto 0;
 					}
-					
 					margin-top: -1rem;
 				}
-				
 				width: 100%;
 			}
 			padding-top: 3rem;
@@ -666,161 +450,106 @@ nav {
 		height: auto;
 		margin-bottom: -2rem;
 	}
-	
 	@include row();
-	
 	.container {
-	
 		h2 {
-			
 			span {
-				
 				@include h2-monoton;
 			}
-			
 			span:nth-of-type(2) {
-				
 				@include h2-monoton2;
 			}
-			
 			@include h2-about;
-			
 		}
-		
 		.profile {
-			
 			img {
-			
 			width: 380px;
 			border-radius: 6px;
 			border: 2px solid lighten($color-primary, 41%);
 			padding: 5px;
 		   }
-			
 			@include col(6.6,12);
 			float: left;
-		    width: 100%;
+		        width: 100%;
 			margin-top: 8rem;
 		}
-		
 		.about-text {
-			
 			p.about-up {
-			
 			@include about-up;
 			text-align: left;
 			font-size: 1.4em;
 			line-height: 34px;
 			margin-top: 6.5rem;
 		}
-		
 		.about-down {
-			
 			@include about-down;
 			text-align: left;
 			font-size: 1.4em;
 			line-height: 34px;
 		}
-		
 		.aboutButtons {
-			
 			.button1 {
-				
 				&:hover {
-					
 					 padding: 11px 20px;
-                     transition: 0.05s all ease-in;
-                     opacity: 0.7;
+                                        transition: 0.05s all ease-in;
+                                        opacity: 0.7;
 				}
-				
 			}
-			
 			.button2 {
-					
 					&:hover {
 						
 						padding: 11px 27px;
-                        transition: 0.05s padding ease-in;
-                        opacity: 0.7;
+                                               transition: 0.05s padding ease-in;
+                                               opacity: 0.7;
 					}
 				}
 			margin-top: 2rem;
 			margin-bottom: 6rem;
 			text-align: left;
-			
 		}
-			
 		@include col(5.4,12);
 	}
-		
-		
 		@include col(12,12);
-		
 	}
-	
 	color: $text-000;
 }
 //======= SKILLS ===========
 #skills {
-	
 	@include large-screens {
-		
 		.container {
-			
 			h2 {
-				
-				font-size: 2.1em;
+			    font-size: 2.1em;
 			}
-			
 			p.h2-sub {
 				@include h2-sub;
 				font-size: 1.5em;
-			}
-			
-			                 
+			}           
 			@include col(12,12);
 		}
-		
 		article.skill-num {
-			
 			ul {
-				
 				li {
-					
-					
 					@include skill-li;
 					font-size: 22px;
 					height: 20px;
 				}
 			}
 		}
-		
-		
 	}
-	
 	@include medium-screens {
-		
 		.container {
-			
 			h2 {
-				
-				font-size: 1.9em;
+			  font-size: 1.9em;
 			}
-			
 			p.h2-sub {
 				@include h2-sub;
 				font-size: 1.4em;
 			}
 			@include col(12,12);
 		}
-		
 		article.skill-num {
-			
 			ul {
-				
 				li {
-					
-					
 					@include skill-li;
 					font-size: 20px;
 					height: 20px;
@@ -829,13 +558,9 @@ nav {
 			}
 		}
 	}
-	
 	@include small-screens {
-		
 		.container {
-			
 			h2 {
-				
 				font-size: 1.7em;
 			}
 			
@@ -844,30 +569,19 @@ nav {
 				font-size: 1.3em;
 				margin-bottom: -2rem;
 			}
-		
-			
 			@include col(12,12);
 		}
-		
 		article.skill-num {
-			
 			ul {
-				
 				li {
-					
-					
 					@include skill-li;
 					font-size: 19px;
 					height: 20px;
 					margin: 50px 0px;
-					
 					&:before {
-						
-						height: 18px;
+					    height: 18px;
 					}
-					
 					&:after {
-						
 						height: 18px;
 					}
 				}
@@ -877,100 +591,65 @@ nav {
 	}
 	
 	@include tiny-screens {
-		
 		.container {
-			
 			h2 {
-				
 				font-size: 1.4em;
 				margin-top: -1rem;
 			}
-			
 			p.h2-sub {
 				@include h2-sub;
 				font-size: 1.1em;
 				margin-top: -1rem;
 				margin-bottom: -2rem;
 			}
-			
 			@include col(12,12);
-			
 		}
-		
-		
 		article.skill-num {
-			
 			ul {
-				
 				li {
-					
-					
 					@include skill-li;
 					font-size: 17px;
 					height: 18px;
 					margin: 45px 0px;
-					
 					&:before {
-						
 						height: 17px;
 					}
-					
 					&:after {
-						
 						height: 17px;
 					}
 				}
-				
 				width: 70%;
 			}
 		}
-		
 		height: auto;
 	}
-
 	.container {
-		
 		h2 {
-			
 			span {
-				
 				@include h2-span;
-				
 			}
 		}
-		
 		.h2-sub {
 			
 			@include h2-sub;
 		}
-		
-		
-		
 		@include col(12,12);
 	}
-	
 	.skill-num {
-		
 		ul {
-			
 			li {
-				
 				@include skill-li;
-				
 				&:before {
-					
-			     content: "";
-                 position: absolute;
-                 top: calc(100% + 10px);
-                 left: 0;
-                  width: 100%;
-                 height: 23px;
-                 background-color: rgba(17,44,82, 0.17);
-                 border-radius: 1000px; 
+			          content: "";
+                                  position: absolute;
+                                  top: calc(100% + 10px);
+                                  left: 0;
+                                  width: 100%;
+                                  height: 23px;
+                                  background-color: rgba(17,44,82, 0.17);
+                                  border-radius: 1000px; 
 				}
-				
 				&:after {
-					
 				 content: "";
                  position: absolute;
                  top: calc(100% + 10px);
@@ -984,91 +663,66 @@ nav {
                  animation-fill-mode: forwards;
 				}
 			}
-			
 		 li.adobe:after {
     animation-name: adobe; }
 
    @keyframes adobe {
-    
     to {
         width: 83%; } }
        li.html:after {
     animation-name: html; }
     @keyframes html  {
-        
     to {
       width: 91%; } }
        li.css:after {
     animation-name: css;  }
    @keyframes css  {
-    
     to {
         width: 86%; } }
        li.js:after {
      animation-name: js; }
    @keyframes js {
-    
     to {
         width: 72%; } }
-
-
+			
       li.an-jq:after {
     
     animation-name: an-jq; }
 
     @keyframes an-jq {
-    
     to {
-        
         width: 68%;
     }
 		}
-		
 		width: 60%;
 		margin: 0 auto;
 	}
-	
 }
 @include skill;
 padding-bottom: 4rem;	
-	
 }
 
 //========= EXPERTISE ========
-
 #services {
-	
 	@include large-screens {
-		
 	  @include row();	  
 		.container {
-			
 			h2 {
-				
 				font-size: 2.1em;
 			}
-			
 			p.h2-sub {
 				@include h2-sub;
 				font-size: 1.5em;
 			}
-			
 			@include col(12,12);
 		}
-		
 		.product1, .product2, .product3 {
-		
 		@include row2();
-		
 		.product1-text {
-			
 			h3 {
-				
 				font-size: 1.9em;
 			}
-			
 			p.product-text {
-				
 				font-size: 19px;
 			}
 			
@@ -1076,48 +730,34 @@ padding-bottom: 4rem;
 				
 				margin-top: 20px;
 			}
-			
 			@include col(6,12);
 			text-align: right;
 		}
-	
-		
 		.design {
-			
 			img {
-				
 				width: 84%;
 				padding-top: 3.2em;
 			}
 			padding-top: 8.7rem;
 		}
-		
 		.code {
-			
 			img {
-				
 				width: 87%;
 				padding-top: 2rem;
 			}
 			padding-top: 12rem;
 		}
-		
 		.responsive {
-			
 			img {
-				
 				width: 87%;
 				padding-top: 8rem;
 			}
 			padding-top: 4.3rem;
 		}
-	
 		margin-top: 4rem;
 		margin-bottom: 8rem;
 	}
-		
 		div.product2 {
-	
 		  margin-top: -3rem;
 	}
 	
@@ -1128,57 +768,37 @@ padding-bottom: 4rem;
 }
 	
 	@include medium-screens {
-		
 		  @include row();	  
 		.container {
-			
 			h2 {
-				
 				font-size: 1.9em;
 			}
-			
 			p.h2-sub {
 				@include h2-sub;
 				font-size: 1.5em;
 			}
-			
 			@include col(12,12);
 			margin-bottom: -2rem;
 		}
-		
 		.product1, .product2, .product3 {
-		
 		@include row2();
-		
 		.product1-text {
-			
 			h3 {
-				
 				font-size: 1.5em;
 				text-align: left;
 			}
-			
 			p.product-text {
-				
 				font-size: 17px;
 				text-align: left;
 			}
-			
 			p.product-text:nth-of-type(2) {
-				
 				margin-top: 10px;
 			}
-			
 			@include col(6,12);
-			text-align: left;
-			
+			text-align: left
 		}
-	
-		
 		.design {
-			
 			img {
-				
 				width: 84%;
 				padding-top: 0em;
 				margin-top: 0rem;
@@ -1186,119 +806,79 @@ padding-bottom: 4rem;
 			padding-top: 8.7rem;
 			margin-top: -3rem;
 		}
-		
 		.code {
-			
 			img {
-				
 				width: 87%;
 				padding-top: 0rem;
 				padding-bottom: 2rem;
 			}
 			padding-top: 2rem;
 		}
-		
 		.responsive {
-			
 			img {
-				
 				width: 87%;
 				padding-top: 0rem;
 			}
 			padding-top: 4.3rem;
 		}
-	
 		margin-top: 4rem;
 		margin-bottom: 8rem;
 	}
-		
-		
 	div.product2 {
-		
 		.product1-text {
-			
 			text-align: left;
 			float: none;
 		}
-		
 		.code {
-			
 			float: none;
 			margin-top: -6rem;
 		}
 	}
-		
 	div.product3 {
-		
 		 .product1-text {
-			
 			margin-top: -2rem;
 			text-align: left;
 		}
-		
 		.responsive {
-		
 			margin-top: -1rem;
 			margin-bottom: -1rem;
 		}
 	}
 }
-	
 	@include small-screens {
-		
 		  @include row();	  
 		.container {
-			
 			h2 {
-				
 				font-size: 1.7em;
 			}
-			
 			p.h2-sub {
 				@include h2-sub;
 				font-size: 1.3em;
 				margin-bottom: -2rem;
 			}
-			
 			@include col(12,12);
 			margin-bottom: -2rem;
 		}
-		
 		.product1, .product2, .product3 {
-		
 		@include row2();
-		
 		.product1-text {
-			
 			h3 {
-				
 				font-size: 1.3em;
 				text-align: left;
 			}
-			
 			p.product-text {
-				
 				font-size: 15px;
 				text-align: left;
 				margin-top: -1rem;
-			   
 			} 
-			
 			p.product-text:nth-of-type(2) {
-				
 				margin-top: 10px;
 			}
-			
 			@include col(6,12);
 			text-align: left;
-			
 		}
-	
-		
 		.design {
-			
 			img {
-				
 				width: 90%;
 				padding-top: 0em;
 				margin-top: 0rem;
@@ -1306,23 +886,16 @@ padding-bottom: 4rem;
 			padding-top: 8.7rem;
 			margin-top: -5rem;
 		}
-		
 		.code {
-			
 			img {
-				
 				width: 95%;
 				padding-top: 0rem;
 				padding-bottom: 0rem;
 			}
 			padding-top: 2rem;
-			
 		}
-		
 		.responsive {
-			
 			img {
-				
 				width: 95%;
 				padding-top: 0rem;
 			}
@@ -1332,97 +905,65 @@ padding-bottom: 4rem;
 		margin-top: 4rem;
 		margin-bottom: 8rem;
 	}
-		
-		
 	div.product2 {
-		
 		.product1-text {
-			
 			text-align: left;
 			float: none;
 			margin-top: -2rem;
 		}
-		
 		.code {
-			
 			float: none;
 			margin-top: -8rem;
 		}
 	}
-		
 	div.product3 {
-		
 		 .product1-text {
-			
 			margin-top: -2rem;
 			text-align: left;
 		}
-		
 		.responsive {
-		
 			margin-top: -1rem;
 			margin-bottom: -1rem;
 		}
 	}
 }
-	
 	@include tiny-screens {
-		
 		 @include row();	  
 		.container {
-			
 			h2 {
-				
 				font-size: 1.4em;
 				margin-top: -1.2rem;
 			}
-			
 			p.h2-sub {
 				@include h2-sub;
 				font-size: 1.1em;
 				margin-top: -1rem;
 				margin-bottom: -6rem;
 			}
-			
 			@include col(12,12);
 			margin-bottom: -2rem;
 		}
-		
 		.product1, .product2, .product3 {
-		
 		@include row2();
-		
 		.product1-text {
-			
 			h3 {
-				
 				font-size: 1.3em;
 				text-align: left;
 			}
-			
 			p.product-text {
-				
 				font-size: 15px;
 				text-align: left;
 				margin-top: -1rem;
-			   
 			} 
-			
 			p.product-text:nth-of-type(2) {
-				
 				margin-top: 10px;
 			}
 			
 			@include col(6,12);
 			text-align: left;
-			
 		}
-	
-		
 		.design {
-			
 			img {
-				
 				width: 90%;
 				padding-top: 0em;
 				margin-top: 0rem;
@@ -1430,388 +971,245 @@ padding-bottom: 4rem;
 			padding-top: 8.7rem;
 			margin-top: -5rem;
 		}
-		
 		.code {
-			
 			img {
-				
 				width: 95%;
 				padding-top: 0rem;
 				padding-bottom: 0rem;
 			}
 			padding-top: 2rem;
-			
 		}
-		
 		.responsive {
-			
 			img {
-				
 				width: 95%;
 				padding-top: 0rem;
 			}
 			padding-top: 4.3rem;
 		}
-	
 		margin-top: 4rem;
 		margin-bottom: 8rem;
-	}
-		
-		
+	}	
 	div.product2 {
-		
 		.product1-text {
-			
 			text-align: left;
 			float: none;
 			margin-top: -4rem;
 		}
-		
 		.code {
-			
 			float: none;
 			margin-top: -8rem;
 		}
 	}
-		
 	div.product3 {
-		
 		 .product1-text {
-			
 			margin-top: -4.5rem;
 			text-align: left;
 		}
-		
 		.responsive {
-		
 			margin-top: -2rem;
 			margin-bottom: -5rem;
 		}
 	}
-		
 	height: auto;
 }
-	
 	@include row();
-	
 	.container {
-		
-		
-		
 		h2 {
-			
 			span {
-				
 				@include h2-span;
 			}
 		}
-		
 		.h2-sub {
-			
 			@include h2-sub;
 		}
-		
 		@include col(12,12);
 	}
-	
 	.product1, .product2, .product3 {
-		
 		@include row2();
-		
 		.product1-text {
-			
 			h3 {
-				
 				padding-bottom: 40px;
 			}
-			
 			.product-text {
-				
 				font-size: 22px;
 			}
-			
 			.product-text:nth-of-type(2) {
-				
 				margin-top: 40px;
 			}
-			
 			@include col(6,12);
 			text-align: right;
 		}
-		
 		.design, .code, .responsive {
-			
 				@include col(6,12);
 		}
-		
 		.design {
-			
 			img {
-				
 				width: 84%;
 			}
 			padding-top: 8.7rem;
 		}
-		
 		.code {
-			
 			img {
-				
 				width: 87%;
 			}
 			padding-top: 12rem;
 		}
-		
 		.responsive {
-			
 			img {
-				
 				width: 87%;
 			}
 			padding-top: 4.3rem;
 		}
-	
 		margin-top: 4rem;
 		margin-bottom: 8rem;
 	}
-	
 	.product2 {
-		
 		.product1-text {
-			
 			text-align: left;
 			float: right;
 		}
-		
 		.code {
-			
 			float: left;
 		}
 	}
-	
 	.product3 {
-		
 		margin-bottom: 5rem;
 	}
-	
 	color: $text-000;
 }
 
 //====== PORTFOLIO =========
 
 #portfolio {
-	
 	@include large-screens {
-	
 			.container {
-				
-				h2 {
-				
+				h2 {	
 				font-size: 2.1em;
 			}
-			
 			.h2-sub {
-				
 				@include h2-sub;
 				font-size: 1.5em;
-				
 			     }
 			}
-		
 	}
-	
 	@include medium-screens {
-		
 		.container {
-			
 			h2 {
-				
 				font-size: 1.7em;
 			}
-			
 			p.h2-sub {
-				
 				font-size: 1.3em;
-				
 			}
 		}
-		
 		.container {
-			
 			article.product1, article.product2, article.product3 {
-				
 				margin-top: 3rem;
 			}
 			
 			article.product1, article.product2, article.product3, article.product3, article.product4, article.product5, article.product6 {
-				
 				width: 50%;
-				
-				
 			}
 		}
 	}
-	
 	@include small-screens {
-		
 		.container {
-			
 			h2 {
-				
 				font-size: 1.5em;
 			}
-			
 			p.h2-sub {
-				
 				font-size: 1.1em;
-				
 			}
 		}
-		
 		.container {
-			
 			article.product1, article.product2, article.product3 {
-				
 				margin-top: 3rem;
 			}
-			
 			article.product1 {
-				
 				margin-top: 0rem;
 			}
-			
 			article.product1, article.product2, article.product3, article.product3, article.product4, article.product5, article.product6 {
-				
 				width: 60%;
-				
 				.overlay {
-	      
 					display: none;
 				}
-				
 				.title {
-					
 					img {
-						
 						width: 24px;
 					}
 				}
-				
 				&:hover .title {
-				
 				opacity: 1;
 			}
-				
 				&:hover a img {
-				
 				transform: scale(1);
-                cursor: pointer;
-	            height: 90%;
+                                cursor: pointer;
+	                         height: 90%;
 			    }
-			
 			}
 		}
 	}
-	
 	@include tiny-screens {
-		
 		.container {
-			
 			h2 {
-				
 				font-size: 1.2em;
 				margin-top: -1rem;
 			}
-			
 			p.h2-sub {
-				
 				font-size: 0.9em;
 				margin-top: -1rem;
 				margin-bottom: -3rem;
 			}
 		}
-		
 		.container {
-			
 			article.product1, article.product2, article.product3 {
-				
 				margin-top: 2rem;
 			}
 			
 			article.product1 {
-				
 				margin-top: 0rem;
 			}
 			
 			article.product1, article.product2, article.product3, article.product3, article.product4, article.product5, article.product6 {
-				
 				width: 90%;
-				
 				.title {
-					
 					h5 {
-						
 						font-size: 1.4em;
 					}
-					
 					p {
-						
 						font-size: 1em;
 					}
-				
 					img {
-						
 						width: 24px;
 					}
 				}
-				
 				margin-top: 2rem;
 			}
 		}
-		
 		height: auto;
 	}
-
-
-	
 	.container {
-		
 		h2 {
-			
 			span {
-				
 				@include h2-span;
 			}
-			
 		}
-		
 		.h2-sub {
-			
 			@include h2-sub;
 			
 		}
-		
 		margin-bottom: -1rem;
 	}
-	
 	.container {
-	
 		.product1, .product2, .product3, .product4, .product5, .product6 {
-			
 			a{
-				
-				img {
-					
+				img { 
 					display: block;
-                    width: 100%;
-                    height: auto;
-                    transition: .8s ease;
+                                        width: 100%;
+                                        height: auto;
+                                        transition: .8s ease;
 				}
-				
 				.overlay {
-					
 					.text {
-						
 						color: darken($text-fff, 8%);
 						background: rgba(35,38,59, 0.4);
 						padding: 1rem;
@@ -1819,67 +1217,51 @@ padding-bottom: 4rem;
 						margin-top: 19.7rem;
 						text-transform: uppercase;
 					}
-					
 					position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 100%;
-                    width: 100%;
-                    opacity: 0;
-                    transition: .8s ease;
-                    background-color: $color-overlay;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+					right: 0;
+                                        height: 100%;
+                                        width: 100%;
+                                        opacity: 0;
+                                        transition: .8s ease;
+                                        background-color: $color-overlay;
 				}
 			}
-			
 			.title {
-				
 				h5 {
-					
-						color: lighten($color-primary, 8%);
+				            color: lighten($color-primary, 8%);
 					    padding-top: 0.5rem;
 					    font-size: 1.6em;
 				}
-				
 				p {
-					
 					font-size: 1.1em;
 					font-weight: 600;
 					color: lighten($color-primary, 28%);
 					margin-top: 0.7rem;
 					margin-bottom: 0.5rem;
 				}
-				
 				img {
-					
 					width: 32px;
 					transform: rotate(90deg);
 				}
 			}
-			
 			@include col(3,12);
 		    position: relative;
 	        overflow: hidden;
-			
 			&:hover a .overlay {
-				
 				opacity: 1;
-                cursor: pointer;
+                                cursor: pointer;
 			}
-			
 			&:hover .title {
-				
 				opacity: 0;
 			}
-			
 			&:hover a img {
-				
 				transform: scale(1.25);
-                cursor: pointer;
-	            height: 90%;
+                                cursor: pointer;
+	                        height: 90%;
 			}
-			
 			border: 2px solid lighten($color-primary, 61%);
 			padding: 35px 20px;
 			margin-bottom: 4rem;
@@ -1889,224 +1271,141 @@ padding-bottom: 4rem;
 			//box-shadow: 4px 6px 18px $color-primary;
 			//border-radius: 10px;
 		}
-		
 		.product2, .product5 {
-			
-			
 			padding-bottom: 35px;
 		}
-		
 		.product4, .product5, .product6 {
-			
 			margin-top: 3rem;
 		}
 	}
 	color: $text-000;
 	background-color: $color-bg;
-	
 }
-
 //======= EMAIL =======
-
 .email {
-	
 	@include large-screens {
-		
 		.container {
-			
 				h3 {
-				
 				font-size: 1.9em;
 			}
-			
 			.h2-sub {
-				
 				@include h2-sub;
 				font-size: 1.5em;
-				
 			     }
 		}
 	}
-	
 	@include medium-screens {
-		
 		.container {
-			
 			h3 {
-			
 			font-size: 1.5em;
 		}
-		
 		p.h2-sub {
-			
 			font-size: 1.2em;
 		}
-			
 	    div.soc {
-			
 			h5 {
-				
 				margin-bottom: 3rem;
 			}
-		
 			a {
-				
 				img {
-					
 					margin: 0px 20px;
 				}
 			}	
 		}
       }
-	}
-	
+}
 	@include small-screens {
-		
 		.container {
-			
 			h3 {
-			
 			font-size: 1.3em;
 		}
-		
 		p.h2-sub {
-			
 			font-size: 1em;
 		}
-			
 	    div.soc {
-			
 			h5 {
-				
 				margin-bottom: 3rem;
 			}
-		
 			a {
-				
 				img {
-					
 					margin: 0px 20px;
 				}
 			}
-			
 			margin-top: 3rem;
 		}
       }
-	}
-	
+}
 	@include tiny-screens {
-		
 		.container {
-			
 			h3 {
-			
 			font-size: 1.1em;
 		}
-		
 		p.h2-sub {
-			
 			font-size: 0.8em;
 		}
-			
 	    div.soc {
-			
 			h5 {
-				
 				margin-bottom: 3rem;
 				font-size: 1em;
 			}
-		
 			a {
-				
 				img {
-					
 					margin: 0px 15px;
 				}
 			}
-			
 			margin-top: 3rem;
 			margin-bottom: -1rem;
 		}
       }
-		
 		height: auto;
-	}
-	
+}
 	.container {
-		
 		h3 {
-			
 			span {
-				
 				@include h2-span;
 			}
 		}
-		
 		.h2-sub {
-			
 			@include h2-sub;
 			font-size: 28px;
 			color: darken($color-fff, 25%);
-			
 		     }
-		
 		.soc {
-			
 			   h5 {
-				
 				  color: darken($color-fff, 14%);
 			     }
 		        a {
-			
 			     img {
-				
 				     @include soc-img;
 				      margin-top: 2rem;
 				     width: 51px;
 			     }
 		}
-		
 		margin-top: 5rem;
-		
 	}
-		
 		margin: 0;
 		padding: 60px 0px 70px;
 	}
-	
 	background: #303452;
-
 }
 
 //========= FOOTER ===========
-
 footer {
-	
 	@include medium-screens {
-		
 		.container {
-			
 			p.copy-right {
-				
 				font-size: 0.9em;
-				
 			}
 		}
 	}
-	
 	@include small-screens {
-		
 		.container {
-			
 			p.copy-right {
-				
 				font-size: 0.8em;
 			}
 		}
 	}
-	
 	.container {
-	
 		.copy-right {
 			
 			font-size: 1em;
@@ -2115,6 +1414,5 @@ footer {
 		margin: 0;
 		padding: 20px 0px;
 	}
-	
 	@include footer;
 }
