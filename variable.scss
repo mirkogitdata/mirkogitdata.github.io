@@ -19,27 +19,22 @@ $text-font: 'Open Sans', sans-serif;
 $text-font2: 'Monoton', cursive;
 
 h1 {
-	
 	font-size: 4.2em;
 }
 
 h2 {
-	
 	font-size: 2.6em;
 }
 
 h3 {
-	
 	font-size: 2.2em;
 }
 
 h4 {
-	
 	font-size: 1.8em;
 }
 
 h5 {
-	
 	font-size: 1.4em;
 }
 
@@ -55,19 +50,16 @@ h6 { font-size: 10px; }
 */
 
 h1, h2, h3, h4, h5 {
-	
 	margin: 0.5rem 0;
 }
 
 
 .container {
-	
     font-size: 1.3em;
 	padding: 4rem 0;
 }
 
 .cf {
-    
 	&::after {
 		display: table;
 		content: "";
@@ -76,9 +68,8 @@ h1, h2, h3, h4, h5 {
 }
 
 img {
-	
     width: 100%;
-	vertical-align: bottom;
+    vertical-align: bottom;
 }	
   
 //======== NAVBAR ===========
@@ -91,7 +82,6 @@ img {
             }
             
             body {
-             
                 overflow-x: hidden;
             }
             
@@ -99,7 +89,7 @@ img {
                 position: fixed;
                 z-index: 1000;
                 top: 0;
-				right: 0;
+		right: 0;
                 bottom: 0;
                 width: 250px;
                 background-color: lighten($color-secondary, 9%);
@@ -115,21 +105,20 @@ img {
 				
             }
 	
-	        nav ul li {
-		
-		        display: inline-block;
+	    nav ul li {
+		display: inline-block;
                 width: 100%;
                 height: 60px;
                 color: #9dc6d1;
                 line-height: 40px;
                 transition: all 0.3s ease-in;
-				text-align: center;
+	        text-align: center;
 	         }
 	
-	         nav ul li:nth-of-type(2n) {
+	    nav ul li:nth-of-type(2n) {
                 
                }
-	         nav ul li:hover {
+	    nav ul li:hover {
                 background: #4362ce;
                 color: white;
                }
@@ -139,31 +128,26 @@ img {
                 text-align: center;
                 color: #fff;
                 padding: 10px 0;
-				font-size: 20px;
+                font-size: 20px;
             }
-            
-            nav a .nav-toggle-btn {
+           nav a .nav-toggle-btn {
                 display: block;
                 position: absolute;
-				top: 25px; 
+	        top: 25px; 
                 right: 280px;
                 width: 36px;
                 height: 36px;
                 transition: 0.1s ease-out all;
             }
-	
-	        nav a .nav-toggle-btn:hover {
-		
-		          width: 39px;
-				height: 39px;
+	   nav a .nav-toggle-btn:hover {
+		    width: 39px;
+	            height: 39px;
 	          }
-            
-            .content {
+           .content {
                 padding-top: 300px;
                 height: 2000px;
                 background-color: #ccf;
                 text-align: center;
-                
             }
 	
 	.active-nav {
@@ -171,12 +155,9 @@ img {
 	}
             .active-nav #hero, .active-nav #about, .active-nav #skills, .active-nav #services, .active-nav #portfolio, .active-nav #contact, .active-nav footer {
                 transform: translateX(-250px);
-			   
             }
 	       
-	      
-	       #hero, #about, #skills, #services, #portfolio, #contact, footer {
-		
+         #hero, #about, #skills, #services, #portfolio, #contact, footer {
 		       transition: all 0.4s ease;
 	        }
             
@@ -184,7 +165,6 @@ img {
 
 //========= HERO =======
 @mixin hero {
-	
 	background-image: url(lib/sass/portfolio/image/hero-image2.png);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -194,20 +174,16 @@ img {
 }
 
 @mixin name {
-	
 	text-shadow: 2px 0.2px;
-	
 }
 
 @mixin sub-name {
-	
 	//color: darken($text-fff, 33%);
 	color: lighten($color-secondary, 17%);
 	text-transform: uppercase;
 }
 
 @mixin scroll-text {
-	
 	text-transform: uppercase;
 	color: lighten($color-secondary, 35%);
 	letter-spacing: .4px;
@@ -222,7 +198,6 @@ img {
 //====== ABOUT ==========
 
 @mixin h2-about {
-	
   font-family: $text-font2;
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -230,7 +205,6 @@ img {
 }
 
 @mixin h2-monoton {
-	
 	background: $color-secondary;
 	color: $text-fff;
 	padding-left: 1rem;
@@ -241,7 +215,6 @@ img {
 }
 
 @mixin h2-monoton2 {
-	
 	background: $color-primary;
 	color: $text-fff;
 	border-top-right-radius: 10px;
@@ -253,7 +226,6 @@ img {
 }
 
 @mixin about-up {
-	
 	font-weight: 600;
 	margin-top: 5rem;
 	padding-top: 1.5em;
@@ -262,7 +234,6 @@ img {
 }
 
 @mixin about-down {
-	
 	font-weight: 600;
 	margin-top: 3rem;
 	line-height: 52px;
@@ -271,7 +242,6 @@ img {
 }
 
 .button1 {
-	
 	background: $color-secondary;
 	color: $text-fff;
 	padding: 12px 22px;
@@ -294,19 +264,17 @@ img {
 @mixin skill {
     color: $text-000;
     background: rgba(35, 38, 59, 0.06);
-	padding-bottom: 2.5rem
+    padding-bottom: 2.5rem
 }	
    
 
 @mixin h2-span {
-	
 	padding: 1px 4px;
 	background: $color-secondary;
 	color: $text-fff;
 }
 
 @mixin h2-sub {
-	
    font-size: 26px;
 	font-style: italic;
 	padding-top: 2rem;
@@ -314,7 +282,6 @@ img {
 
 
 @mixin skill-li {
-	
 	text-align: left;
 	position: relative;
     list-style: none;
@@ -332,12 +299,10 @@ img {
 
 //========= FOOTER =====
 @mixin footer {
-	
 	background: #23263b;
 }
 
 @mixin soc-img {
-	
       background: rgba(255, 255, 255, 0.8);
       width: 44px;
       margin-right: 7px;
@@ -348,49 +313,37 @@ img {
 
 /*Media Queries - Responsive*/
 @mixin tiny-screens() {
-	
 	@media only screen and (max-width: 560px) {
-		
 		@content;
 	}
 }
 
 @mixin small-screens() {
-	
 	@media only screen and (max-width: 768px) {
-		
 		@content;
 	}
 }
 
 @mixin medium-screens() {
-	
 	@media only screen and (max-width: 995px) {
-		
 		@content;
 	}
 }
 
 @mixin large-screens() {
-	
 	@media only screen and (max-width: 1200px) {
-		
 		@content;
 	}
 }
 
 @mixin xl-screens() {
-	
 	@media only screen and (max-width: 1400px) {
-		
 		@content;
 	}
 }
 
 @mixin desktop-screens() {
-	
 	@media only screen and (max-width: 1600px) {
-		
 		@content;
 	}
 }
