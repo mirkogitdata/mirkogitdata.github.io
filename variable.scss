@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,800&subset=cyrillic-ext,latin-ext');
-
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 
 /*===COLORS===*/
-
 $color-primary: #23263b;
 $color-secondary: #4362ce;
 $color-fff: #fff;
 $color-overlay: rgba(67,98,206, 0.8);
 $color-bg: rgba(80,86,135, 0.1);
+
 /*===TEXT COLOR===*/
 $text-000: #000;
 $text-fff: #fff;
@@ -264,9 +263,6 @@ img {
     color: rgba(12,12,12, 0.84);			
 				
 }
-
-//======= PORTFOLIO ========
-
 
 //========= FOOTER =====
 @mixin footer {
