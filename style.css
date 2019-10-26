@@ -72,27 +72,24 @@ a:link {
 a:visited {
   text-decoration: none; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
 body {
   overflow-x: hidden; }
 
 nav {
   position: fixed;
-  z-index: 1000;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
   width: 250px;
   background-color: #6780d7;
   transform: translateX(250px);
-  transition: transform 0.4s ease; }
+  transition: transform 0.4s ease;
+  -webkit-transform: translateX(250px);
+  -moz-transform: translateX(250px);
+  -ms-transform: translateX(250px);
+  -o-transform: translateX(250px);
+}
 
 .active-nav nav {
   transform: translate3d(0, 0, 0); }
