@@ -1010,7 +1010,7 @@ nav .soc {
       width: 100vw;
       padding: 4rem 2rem 1.4rem; }
       #skills div.center * {
-        font-size: 0.45em; } }
+        font-size: 0.6em; } }
   #skills .container {
     /*=== @include col(12,12); input with grid_system
     or input row() ===*/ }
