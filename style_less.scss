@@ -22,18 +22,17 @@ a {
 		
 	}
 }
-
 * {
 	margin: 0;
 	padding: 0;
 }
-
 
 //======= NAVBAR ======
 
 @include navbar-menu; //=== NAVBAR PROPERTIES(variable.scss) ====
 
 nav {
+	//========= RESPONSIVE LINE OF CODES =========
 	@include large-screens {
 		div.soc {
 		margin-top: 2.5rem; }
@@ -60,21 +59,20 @@ nav {
 		 a .nav-toggle-btn {
                 display: block;
                 position: absolute;
-		top: 20px; 
+		        top: 20px; 
                 right: 270px;
                 width: 27px;
                 height: 28px;
                 transition: 0.1s ease-out all; }
 		
 		a .nav-toggle-btn:hover {
-		
 		        width: 28px;
 			height: 29px;
 		}
 		div.soc {
 		
-		a {
-			img {
+		    a {
+			     img {
 				
 				@include soc-img;
 				display: block;
@@ -82,11 +80,9 @@ nav {
 				position: relative;
 				top: 0;
                 left: 94px; }
-		}
-		
-		margin-top: 2.4rem;
-		
-	}	
+		    }
+		    margin-top: 2.4rem;
+	   }	
 		
 }
 		
@@ -108,6 +104,7 @@ nav {
 
 //======== HERO =========
 #hero {
+	//========= RESPONSIVE LINE OF CODES =========
 	@include desktop-screens {
 		.container {
 			@include row();
@@ -120,7 +117,7 @@ nav {
 			div.scroll {
 			   margin-top: 15rem;
 				p {
-                                   margin-bottom: -28px;
+                   margin-bottom: -28px;
 				}
 				a {
 					img {
@@ -136,7 +133,7 @@ nav {
 		background-position: center center;
 		height: 768px;
 	}
-	
+
 	@include xl-screens {
 		.container {
 			@include row();
@@ -231,7 +228,9 @@ nav {
 				img {
 				    width: 54px;
 				    height: 31px;
-				    cursor: pointer;
+					cursor: pointer;
+					position: relative;
+					top: 20px;
 			      }
 			   }
 			}
@@ -259,7 +258,6 @@ nav {
 				}
 			   a {
 				img {
-				
 				    width: 41px;
 				    height: 24px;
 				    cursor: pointer;
@@ -276,11 +274,12 @@ nav {
 		background-position: center bottom;
 		height: auto;
 	}
+	//========= SCSS LINES OF CODE =========
 	.container {
 		@include row();
 		h1.name {
 			@include name;
-                        margin-top: 16rem;
+            margin-top: 16rem;
 			letter-spacing: 1px;
 		}
 		.sub-name {
@@ -290,10 +289,11 @@ nav {
             padding-right: .7rem;*/ }
 			.dot {
                animation: blink 1s infinite;
-	           border-right: 0.3rem solid #889be0;
+	           border-right: 0.3rem solid rgba(128,145,207, 0.9);
                 padding-right: .7rem; }
 			   @keyframes blink {
-	           to {opacity: 0;}}
+			   to {opacity: 0;}
+			   }
 		}
 		.scroll {
 			p {
@@ -302,12 +302,12 @@ nav {
 			
 			a {
 				img {
-				    width: 81px;
-				    height: 42px;
+				    width: 91px;
+					height: 42px;
+					margin-top: 1.5rem;
 				    cursor: pointer;
 			      }
 			}
-			@include scroll;
 		}
 		@include col(12,12);
 		position: relative;
@@ -317,6 +317,7 @@ nav {
 
 //======= ABOUT =======
 #about {
+	//========= RESPONSIVE LINE OF CODES =========
 	@include large-screens {
 		@include row();
 		.container {
@@ -352,7 +353,7 @@ nav {
 			float: left;
 		        width: 100%;
 			margin-top: 6rem;
-		}
+		    }
 			div.about-text	{
 				p.about-up {
 		                        font-size: 1.3em;
@@ -450,6 +451,7 @@ nav {
 		height: auto;
 		margin-bottom: -2rem;
 	}
+	//========= SCSS LINES OF CODE =========
 	@include row();
 	.container {
 		h2 {
@@ -470,7 +472,7 @@ nav {
 		   }
 			@include col(6.6,12);
 			float: left;
-		        width: 100%;
+		    width: 100%;
 			margin-top: 8rem;
 		}
 		.about-text {
@@ -489,20 +491,39 @@ nav {
 		}
 		.aboutButtons {
 			.button1 {
+				position: relative;
+				display: inline-block;
+				transition: 1s;
+	            transform: translateX(100px);
+	            opacity: 0;
 				&:hover {
-					 padding: 11px 20px;
-                                        transition: 0.05s all ease-in;
-                                        opacity: 0.7;
+					padding: 11px 20px;
+                    transition: 0.05s all ease-in;
+                    opacity: 0.7;
 				}
 			}
+			.button1[data-scroll="in"] {
+				transform: translateX(0);
+				transition-delay: 0.3s;
+				opacity: 1;
+			}
 			.button2 {
+				position: relative;
+				display: inline-block;
+				transition: 1s;
+	            transform: translateX(100px);
+	            opacity: 0;
 					&:hover {
-						
-						padding: 11px 27px;
-                                               transition: 0.05s padding ease-in;
-                                               opacity: 0.7;
+					    padding: 11px 27px;
+                        transition: 0.05s padding ease-in;
+                        opacity: 0.7;
 					}
-				}
+			}
+			.button2[data-scroll="in"] {
+				transform: translateX(0);
+				transition-delay: 0.8s;
+				opacity: 1;
+			}
 			margin-top: 2rem;
 			margin-bottom: 6rem;
 			text-align: left;
@@ -513,197 +534,244 @@ nav {
 	}
 	color: $text-000;
 }
+
 //======= SKILLS ===========
+
 #skills {
+	//========= RESPONSIVE LINE OF CODES =========
+	@include xl-screens {
+		.container {
+			h2 {
+				font-size: 2.2em;
+			}
+			p.h2-sub {
+				@include h2-sub;
+				font-size: 1.6em;
+			}
+
+		}
+		div.center {
+			* {
+				font-size: 1em;
+			}
+			width: 50vw;
+		}
+	}
 	@include large-screens {
 		.container {
 			h2 {
-			    font-size: 2.1em;
+				font-size: 2.1em;
 			}
 			p.h2-sub {
 				@include h2-sub;
 				font-size: 1.5em;
-			}           
-			@include col(12,12);
-		}
-		article.skill-num {
-			ul {
-				li {
-					@include skill-li;
-					font-size: 22px;
-					height: 20px;
-				}
 			}
+
+		}
+		div.center {
+			* {
+				font-size: 0.9em;
+			}
+			width: 60vw;
 		}
 	}
 	@include medium-screens {
 		.container {
 			h2 {
-			  font-size: 1.9em;
+				font-size: 1.7em;
 			}
 			p.h2-sub {
-				@include h2-sub;
-				font-size: 1.4em;
-			}
-			@include col(12,12);
-		}
-		article.skill-num {
-			ul {
-				li {
-					@include skill-li;
-					font-size: 20px;
-					height: 20px;
-					margin: 55px 0px;
-				}
+				font-size: 1.3em;
 			}
 		}
+		div.center {
+			* {
+				font-size: 0.7em;
+			}
+			width: 70vw;
+		}
+		
 	}
 	@include small-screens {
 		.container {
 			h2 {
-				font-size: 1.7em;
+				font-size: 1.5em;
 			}
-			
 			p.h2-sub {
-				@include h2-sub;
-				font-size: 1.3em;
-				margin-bottom: -2rem;
+				font-size: 1.1em;
 			}
-			@include col(12,12);
 		}
-		article.skill-num {
-			ul {
-				li {
-					@include skill-li;
-					font-size: 19px;
-					height: 20px;
-					margin: 50px 0px;
-					&:before {
-					    height: 18px;
-					}
-					&:after {
-						height: 18px;
-					}
-				}
-				width: 70%;
+		div.center {
+			* {
+				font-size: 0.7em;
 			}
+			width: 100vw;
+			margin: 2rem 0rem 0rem;
+			box-shadow: none;
 		}
 	}
-	
 	@include tiny-screens {
 		.container {
 			h2 {
-				font-size: 1.4em;
+				font-size: 1.2em;
 				margin-top: -1rem;
 			}
 			p.h2-sub {
-				@include h2-sub;
-				font-size: 1.1em;
+				font-size: 0.9em;
 				margin-top: -1rem;
-				margin-bottom: -2rem;
-			}
-			@include col(12,12);
-		}
-		article.skill-num {
-			ul {
-				li {
-					@include skill-li;
-					font-size: 17px;
-					height: 18px;
-					margin: 45px 0px;
-					&:before {
-						height: 17px;
-					}
-					&:after {
-						height: 17px;
-					}
-				}
-				width: 70%;
+				margin-bottom: -3rem;
 			}
 		}
-		height: auto;
+		div.center {
+			* {
+				font-size: 0.45em;
+			}
+			width: 100vw;
+			padding: 4rem 2rem 1.4rem;
+		}
 	}
-	.container {
-		h2 {
-			span {
-				@include h2-span;
-			}
-		}
-		.h2-sub {
-			
-			@include h2-sub;
-		}
-		@include col(12,12);
+	//========= SCSS LINES OF CODE ==============
+	//===========================================
+	//===========================================
+    //========= FLEXBOX FEATURES =========
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	//background: rgba(35, 38, 59, 0.06);
+	background: linear-gradient(to bottom, rgba(80,86,135, 0.2), rgba(67,98,206, 0.1));
+    .container {
+        h2 {
+            color: #000;
+            span {
+                @include h2-span;
+            }
+        }
+        .h2-sub {
+              @include h2-sub;
+           }
+        /*=== @include col(12,12); input with grid_system
+        or input row() ===*/
 	}
-	.skill-num {
-		ul {
-			li {
-				@include skill-li;
-				&:before {
-			          content: "";
-                                  position: absolute;
-                                  top: calc(100% + 10px);
-                                  left: 0;
-                                  width: 100%;
-                                  height: 23px;
-                                  background-color: rgba(17,44,82, 0.17);
-                                  border-radius: 1000px; 
+    .center {
+		font-family: $text-skills;
+        width: 50vw;
+        padding: 4rem 5rem 1.4rem;
+        margin: 4rem 0rem 7rem;
+        background: #23263b;
+        background: rgba(128,145,207, 0.6);
+        border-radius: 6px;
+        color: #23263b;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px #23263b;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        .skillBox {
+            float: left;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 28px 0;
+            p {
+				//color:rgba(0,0,0, 1.0);
+				color: darken(#23263b, 20%);
+                text-transform: uppercase;
+                text-shadow: 0.5px 0.7px;
+                margin: 0 0 10px;
+                padding: 0;
+                font-size: 1.55em;
+                font-weight: bolder;
+				letter-spacing: 1.5px;
+				text-shadow: 1.5px 0.2px
+            }
+            p:nth-child(1) {
+                float: left;
+                position: relative;
+                top: -38px;
+                font-weight: 700;
+            }
+            p:nth-child(2) {
+                float: right;
+                position: relative;
+                top: -38px;
+                font-weight: 700;
+            }
+            .skill {
+                /*background: #4362ce;*/
+                background: #fff;
+                padding: 3px;
+                box-sizing: border-box;
+                border: 1px solid #4362ce;
+                /*border: 3px solid #23263b;*/
+                .skill-level {
+					//background:  #4362ce;
+					background:  none;
+					height: 12px;
+					transition: 1.5s;
+					transform-origin: left;
+					transform: scaleX(0);
+					-webkit-transition: 1.5s;
+					-moz-transition: 1.5s;
+					-ms-transition: 1.5s;
+					-o-transition: 1.5s;
+					transition-delay: 1s;
+                }
+				.skill-level:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: #4362ce;
+					transform-origin: right;
+					transition-delay: 8s;
+					-webkit-transition: 1s;
+					-moz-transition: 1s;
+					-ms-transition: 1s;
+					-o-transition: 1s;
+				}             
+				.skill-level[data-scroll="in"] {
+					transition: 1s ease-in;
+					transform: scaleX(1);
+					-webkit-transition: 1s ease-in;
+					-moz-transition: 1s ease-in;
+					-ms-transition: 1s ease-in;
+					-o-transition: 1s ease-in;
 				}
-				&:after {
-				 content: "";
-                 position: absolute;
-                 top: calc(100% + 10px);
-                 left: 0;
-                 width: 0;
-                 height: 23px;
-                 background: #4362ce;
-                 border-radius: 1000px;
-                 animation-duration: 1.2s;
-                 animation-timing-function: ease-in-out;
-                 animation-fill-mode: forwards;
+				/*.skill-level[data-scroll="in"]:before {
+					transform: scaleX(0);
+					transition-delay: 0.5s;
 				}
-			}
-		 li.adobe:after {
-    animation-name: adobe; }
-
-   @keyframes adobe {
-    to {
-        width: 83%; } }
-       li.html:after {
-    animation-name: html; }
-    @keyframes html  {
-    to {
-      width: 91%; } }
-       li.css:after {
-    animation-name: css;  }
-   @keyframes css  {
-    to {
-        width: 86%; } }
-       li.js:after {
-     animation-name: js; }
-   @keyframes js {
-    to {
-        width: 72%; } }
-			
-      li.an-jq:after {
-    
-    animation-name: an-jq; }
-
-    @keyframes an-jq {
-    to {
-        width: 68%;
-    }
-		}
-		width: 60%;
-		margin: 0 auto;
-	}
-}
-@include skill;
-padding-bottom: 4rem;	
-}
-
+				*/
+                .num1 {
+                    width: 90%;
+                }
+                .num2 {
+                     width: 86%;
+                }
+                .num3 {
+                     width: 62%;
+                }
+                .num4 {
+                     width: 75%;
+                }
+                .num5 {
+                     width: 55%;
+                }
+                .num6 {
+                    width: 82%;
+                }
+                             
+            }
+        }
+    }   
+ }
+ 
 //========= EXPERTISE ========
 #services {
+	//========= RESPONSIVE LINE OF CODES =========
 	@include large-screens {
 	  @include row();	  
 		.container {
@@ -725,7 +793,6 @@ padding-bottom: 4rem;
 			p.product-text {
 				font-size: 19px;
 			}
-			
 			.product-text:nth-of-type(2) {
 				
 				margin-top: 20px;
@@ -759,7 +826,7 @@ padding-bottom: 4rem;
 	}
 		div.product2 {
 		  margin-top: -3rem;
-	}
+	 }
 	
 	div.product3 {
 		 margin-top: -3rem;
@@ -785,17 +852,15 @@ padding-bottom: 4rem;
 		.product1-text {
 			h3 {
 				font-size: 1.5em;
-				text-align: left;
 			}
 			p.product-text {
 				font-size: 17px;
-				text-align: left;
 			}
 			p.product-text:nth-of-type(2) {
 				margin-top: 10px;
 			}
 			@include col(6,12);
-			text-align: left
+			text-align: left;
 		}
 		.design {
 			img {
@@ -823,6 +888,12 @@ padding-bottom: 4rem;
 		}
 		margin-top: 4rem;
 		margin-bottom: 8rem;
+	}
+	div.product1 {
+		.product1-text {
+			text-align: left;
+			float: none;
+		}
 	}
 	div.product2 {
 		.product1-text {
@@ -1012,6 +1083,7 @@ padding-bottom: 4rem;
 	}
 	height: auto;
 }
+	//========= SCSS LINES OF CODE ==============
 	@include row();
 	.container {
 		h2 {
@@ -1027,11 +1099,64 @@ padding-bottom: 4rem;
 	.product1, .product2, .product3 {
 		@include row2();
 		.product1-text {
+
 			h3 {
+				position: relative;
+				display: inline-block;
+				transition: 0.8s ease-in-out;
+				transform: translateX(-300px);
+				opacity: 0;
 				padding-bottom: 40px;
+				-webkit-transition: 0.8s ease-in-out;
+				-moz-transition: 0.8s ease-in-out;
+				-ms-transition: 0.8s ease-in-out;
+				-o-transition: 0.8s ease-in-out;
+				-webkit-transform: translateX(-300px);
+				-moz-transform: translateX(-300px);
+				-ms-transform: translateX(-300px);
+				-o-transform: translateX(-300px);
+}
+			h3[data-scroll="in"] {
+				transform: translateX(0);
+				transition-delay: 0.5s;
+				opacity: 1;
 			}
+			h3.h3Left {
+				transform: translateX(300px);
+				-webkit-transform: translateX(300px);
+				-moz-transform: translateX(300px);
+				-ms-transform: translateX(300px);
+				-o-transform: translateX(300px);
+			 }
+			 h3.h3Left[data-scroll="in"] {
+				transform: translateX(0);
+				transition-delay: 0.3s;
+				opacity: 1;
+			} 
 			.product-text {
 				font-size: 22px;
+				position: relative;
+				display: inline-block;
+				transition: 0.7s ease-out;
+				transform: translateY(150px);
+				opacity: 0;
+				-webkit-transform: translateY(150px);
+				-moz-transform: translateY(150px);
+				-ms-transform: translateY(150px);
+				-o-transform: translateY(150px);
+				-webkit-transition: 0.7s ease-out;
+				-moz-transition: 0.7s ease-out;
+				-ms-transition: 0.7s ease-out;
+				-o-transition: 0.7s ease-out;
+}
+			.product-text[data-scroll="in"] {
+				transform: translateY(0);
+				transition-delay: 1.2s;
+				opacity: 1;
+				-webkit-transform: translateY(0);
+				-moz-transform: translateY(0);
+				-ms-transform: translateY(0);
+				-o-transform: translateY(0);
 			}
 			.product-text:nth-of-type(2) {
 				margin-top: 40px;
@@ -1081,16 +1206,17 @@ padding-bottom: 4rem;
 //====== PORTFOLIO =========
 
 #portfolio {
+	//========= RESPONSIVE LINE OF CODES =========
 	@include large-screens {
-			.container {
-				h2 {	
-				font-size: 2.1em;
+		.container {
+			h2 {	
+			font-size: 2.1em;
+		    }
+		    .h2-sub {
+			@include h2-sub;
+			font-size: 1.5em;
 			}
-			.h2-sub {
-				@include h2-sub;
-				font-size: 1.5em;
-			     }
-			}
+		}
 	}
 	@include medium-screens {
 		.container {
@@ -1187,6 +1313,7 @@ padding-bottom: 4rem;
 		}
 		height: auto;
 	}
+    //========= SCSS LINES OF CODE ==============
 	.container {
 		h2 {
 			span {
@@ -1204,9 +1331,9 @@ padding-bottom: 4rem;
 			a{
 				img { 
 					display: block;
-                                        width: 100%;
-                                        height: auto;
-                                        transition: .8s ease;
+                    width: 100%;
+                    height: auto;
+                    transition: .8s ease;
 				}
 				.overlay {
 					.text {
@@ -1218,20 +1345,20 @@ padding-bottom: 4rem;
 						text-transform: uppercase;
 					}
 					position: absolute;
-                                        top: 0;
-                                        bottom: 0;
-                                        left: 0;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
 					right: 0;
-                                        height: 100%;
-                                        width: 100%;
-                                        opacity: 0;
-                                        transition: .8s ease;
-                                        background-color: $color-overlay;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .8s ease;
+                    background-color: $color-overlay;
 				}
 			}
 			.title {
 				h5 {
-				            color: lighten($color-primary, 8%);
+				        color: lighten($color-primary, 8%);
 					    padding-top: 0.5rem;
 					    font-size: 1.6em;
 				}
@@ -1252,15 +1379,15 @@ padding-bottom: 4rem;
 	        overflow: hidden;
 			&:hover a .overlay {
 				opacity: 1;
-                                cursor: pointer;
+                cursor: pointer;
 			}
 			&:hover .title {
 				opacity: 0;
 			}
 			&:hover a img {
 				transform: scale(1.25);
-                                cursor: pointer;
-	                        height: 90%;
+                cursor: pointer;
+	            height: 90%;
 			}
 			border: 2px solid lighten($color-primary, 61%);
 			padding: 35px 20px;
@@ -1279,10 +1406,11 @@ padding-bottom: 4rem;
 		}
 	}
 	color: $text-000;
-	background-color: $color-bg;
+	background: linear-gradient(to bottom, rgba(80,86,135, 0.2), rgba(67,98,206, 0.1));
 }
 //======= EMAIL =======
 .email {
+	//========= RESPONSIVE LINE OF CODES =========
 	@include large-screens {
 		.container {
 				h3 {
@@ -1333,7 +1461,7 @@ padding-bottom: 4rem;
 			}
 			margin-top: 3rem;
 		}
-      }
+    }
 }
 	@include tiny-screens {
 		.container {
@@ -1359,6 +1487,7 @@ padding-bottom: 4rem;
       }
 		height: auto;
 }
+	//========= SCSS LINES OF CODE ==============
 	.container {
 		h3 {
 			span {
@@ -1391,6 +1520,7 @@ padding-bottom: 4rem;
 
 //========= FOOTER ===========
 footer {
+	//========= RESPONSIVE LINE OF CODES =========
 	@include medium-screens {
 		.container {
 			p.copy-right {
@@ -1405,6 +1535,7 @@ footer {
 			}
 		}
 	}
+	//========= SCSS LINES OF CODE ==============
 	.container {
 		.copy-right {
 			

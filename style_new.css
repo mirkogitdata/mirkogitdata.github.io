@@ -206,7 +206,7 @@ nav .soc {
     left: 94px; }
 
 #hero {
-  background-image: url(image/hero-image2.png);
+  background-image: url(lib/sass/mirkogitdata.github.io/image/hero-image2.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -214,7 +214,7 @@ nav .soc {
   height: 768px; }
   @media only screen and (max-width: 1600px) {
     #hero {
-      background-image: url(image/hero-image2.png);
+      background-image: url(lib/sass/mirkogitdata.github.io/image/hero-image2.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center center;
@@ -262,7 +262,7 @@ nav .soc {
             bottom: -3rem; } }
   @media only screen and (max-width: 1400px) {
     #hero {
-      background-image: url(image/hero-image2.png);
+      background-image: url(lib/sass/mirkogitdata.github.io/image/hero-image2.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center center;
@@ -308,7 +308,7 @@ nav .soc {
           margin-top: 1.5rem; } }
   @media only screen and (max-width: 1200px) {
     #hero {
-      background-image: url(image/hero-image2.png);
+      background-image: url(lib/sass/mirkogitdata.github.io/image/hero-image2.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center center;
@@ -352,7 +352,7 @@ nav .soc {
           margin-top: -4.5rem; } }
   @media only screen and (max-width: 995px) {
     #hero {
-      background-image: url(image/hero-image2.png);
+      background-image: url(lib/sass/mirkogitdata.github.io/image/hero-image2.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center center;
@@ -403,7 +403,7 @@ nav .soc {
             cursor: pointer; } }
   @media only screen and (max-width: 768px) {
     #hero {
-      background-image: url(image/hero-image2.png);
+      background-image: url(lib/sass/mirkogitdata.github.io/image/hero-image2.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center center;
@@ -455,7 +455,7 @@ nav .soc {
             top: 20px; } }
   @media only screen and (max-width: 560px) {
     #hero {
-      background-image: url(image/hero-image2.png);
+      background-image: url(lib/sass/mirkogitdata.github.io/image/hero-image2.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center center;
