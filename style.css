@@ -919,7 +919,7 @@ nav .soc {
             opacity: 0.7; }
         #about .container .about-text .aboutButtons .button1[data-scroll="in"] {
           transform: translateX(0);
-          transition-delay: 0.3s;
+          /*transition-delay: 0.3s;*/
           opacity: 1; }
         #about .container .about-text .aboutButtons .button2 {
           position: relative;
@@ -933,7 +933,7 @@ nav .soc {
             opacity: 0.7; }
         #about .container .about-text .aboutButtons .button2[data-scroll="in"] {
           transform: translateX(0);
-          transition-delay: 0.8s;
+          /*transition-delay: 0.8s;*/
           opacity: 1; }
       @media only screen and (min-width: 995px) {
         #about .container .about-text {
