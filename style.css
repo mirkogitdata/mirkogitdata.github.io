@@ -910,9 +910,14 @@ nav .soc {
         #about .container .about-text .aboutButtons .button1 {
           position: relative;
           display: inline-block;
-          transition: 1s;
+          transition: 0.7s;
           transform: translateX(100px);
-          opacity: 0; }
+          opacity: 0;
+          -webkit-transition: 0.7s;
+          -moz-transition: 0.7s;
+          -ms-transition: 0.7s;
+          -o-transition: 0.7s;
+}
           #about .container .about-text .aboutButtons .button1:hover {
             padding: 11px 20px;
             transition: 0.05s all ease-in;
@@ -924,9 +929,14 @@ nav .soc {
         #about .container .about-text .aboutButtons .button2 {
           position: relative;
           display: inline-block;
-          transition: 1s;
+          transition: 0.7s;
           transform: translateX(100px);
-          opacity: 0; }
+          opacity: 0;
+          -webkit-transition: 0.7s;
+          -moz-transition: 0.7s;
+          -ms-transition: 0.7s;
+          -o-transition: 0.7s;
+}
           #about .container .about-text .aboutButtons .button2:hover {
             padding: 11px 27px;
             transition: 0.05s padding ease-in;
