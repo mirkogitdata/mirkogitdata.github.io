@@ -904,7 +904,7 @@ nav .soc {
         font-size: 1.4em;
         line-height: 34px; }
       #about .container .about-text .aboutButtons {
-        margin-top: 2rem;
+        margin-top: 0rem;
         margin-bottom: 2rem;
         text-align: left; }
         #about .container .about-text .aboutButtons .button1 {
