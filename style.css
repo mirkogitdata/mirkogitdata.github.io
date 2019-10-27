@@ -89,6 +89,7 @@ nav {
   right: 0;
   bottom: 0;
   width: 250px;
+  height: 100vh;
   background-color: #6780d7;
   transform: translateX(250px);
   transition: transform 0.4s ease; }
@@ -1124,9 +1125,9 @@ nav .soc {
         #skills .center .skillBox .skill .num2 {
           width: 86%; }
         #skills .center .skillBox .skill .num3 {
-          width: 62%; }
+          width: 66%; }
         #skills .center .skillBox .skill .num4 {
-          width: 75%; }
+          width: 60%; }
         #skills .center .skillBox .skill .num5 {
           width: 55%; }
         #skills .center .skillBox .skill .num6 {
