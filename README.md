@@ -15,7 +15,7 @@ In the portfolio section there are 6 products, which open links to three html pa
 
 I did not use the <b>Boostrap</b> framework because I wanted to highlight my <b>SASS/LESS</b> capabilities and using <b>GRID</b> for a vised-dimensional layout.
 
-The site is developed with semantic tags in <b>HTML</b>. For better <b>SEO</b> placement. It is also optimized on the PNG, JPG file size.
+The site is developed with semantic tags in <b>HTML</b>. For better <b>SEO</b> placement. It is also optimized on the <b>PNG</b>, JPG file size.
 
 It is customizable for many device with responsive lines of code(media queries variables and GRID system). Because we are in the first period of mobile displaying.
 
