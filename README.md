@@ -1,5 +1,5 @@
 <h1>Portfolio description</h1>
-You can see my portfolio <a href="https://mirkogitdata.github.io" target="_blank">Link to my portfolio</a>
+You can see my portfolio <a href="https://mirkogitdata.github.io"  target="_blank">Link to my portfolio</a>
 <br 
 <br>
 The project consists of several parts, which make up the portfolio. In respositor you can find <b>HTML, CSS, SCSS, JS</b> files with two directories containing image files jpg and png.
