@@ -3,7 +3,7 @@
 The project consists of several parts, which make up the portfolio.
 In respositor you can find HTML, CSS, SCSS, JS files with two directories containing image files jpg and png.
 
-The website was developed using HTML5 and SASS / LESS preprocessor technology or super css technique, which is located on the Ruby platform.
+The website was developed using <h4>HTML5</h4> and <h4>SASS / LESS</h4> preprocessor technology or super css technique, which is located on the Ruby platform.
 
 It consists of three writings:
 
