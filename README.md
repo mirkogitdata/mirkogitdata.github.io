@@ -13,9 +13,9 @@ At the bottom of the page are four <b>JavaScript</b> files, which perform the fu
 
 In the portfolio section there are 6 products, which open links to three html pages and three pdf pages.
 
-I did not use the Boostrap framework because I wanted to highlight my <b>SASS/LESS</b> capabilities and using <b>GRID</b> for a vised-dimensional layout.
+I did not use the <b>Boostrap</b> framework because I wanted to highlight my <b>SASS/LESS</b> capabilities and using <b>GRID</b> for a vised-dimensional layout.
 
-The site is developed with semantic tags in html. For better SEO placement. It is also optimized on the PNG, JPG file size.
+The site is developed with semantic tags in <b>html</b>. For better SEO placement. It is also optimized on the PNG, JPG file size.
 
 It is customizable for many device with responsive lines of code(media queries variables and GRID system). Because we are in the first period of mobile displaying.
 
