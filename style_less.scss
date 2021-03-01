@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: $text-fff;
+	color: $text-fff;
     font-family: $text-font;
     text-align: center;
 }
@@ -111,8 +111,8 @@ nav {
 			h1.name {
 				font-size: 4em;
 			}
-			h4.sub-name {
-				font-size: 2.1em;
+			h3.sub-name {
+				font-size: 2.4em;
 			}
 			div.scroll {
 			   margin-top: 15rem;
@@ -131,7 +131,7 @@ nav {
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center center;
-		height: 768px;
+		height: 100vh;
 	}
 
 	@include xl-screens {
@@ -141,8 +141,8 @@ nav {
 				margin-top: -10rem;
 				font-size: 2.8em;
 			}
-			h4.sub-name {
-				font-size: 1.7em;
+			h3.sub-name {
+				font-size: 2em;
 				padding-bottom: 9rem;
 			}
 			div.scroll {
@@ -153,8 +153,7 @@ nav {
 		}
 		@include hero;
 		background-size: cover;
-		background-position: -400px -200px;
-		height: 540px; 
+		height: 100vh; 
 	}
 	
 	@include large-screens {
@@ -164,7 +163,7 @@ nav {
 				margin-top: -5rem;
 				font-size: 2.8em;
 			}
-			h4.sub-name {
+			h3.sub-name {
 				font-size: 1.5em;
 				padding-bottom: 14rem;
 			}
@@ -175,9 +174,7 @@ nav {
 		}
 		@include hero;
 		background-size: cover;
-		background-position: -300px -200px;
-		height: 540px;
-	}
+		height: 100vh;	}
 	@include medium-screens {
 		.container {
 			@include row();
@@ -185,7 +182,7 @@ nav {
 				margin-top: 0rem;
 				font-size: 2.8em;
 			}
-			h4.sub-name {
+			h3.sub-name {
 				font-size: 1.5em;
 				padding-bottom: 9rem;
 			}
@@ -207,8 +204,7 @@ nav {
 		background-size: cover;
 		background-attachment: scroll;
 		background-position: center bottom;
-		height: 480px;
-	}
+		height: 100vh;	}
 	@include small-screens {
 		.container {
 			@include row();
@@ -216,7 +212,7 @@ nav {
 				margin-top: 0rem;
 				font-size: 2.2em;
 			}
-			h4.sub-name {
+			h3.sub-name {
 				font-size: 1.3em;
 			}
 		     div.scroll {
@@ -239,7 +235,7 @@ nav {
 		background-size: cover;
 		background-attachment: scroll;
 		background-position: center bottom;
-	    height: 510px;
+	    height: 100vh;
 	}
 	@include tiny-screens {
 		.container {
@@ -248,7 +244,7 @@ nav {
 				font-size: 2em;
 				margin-top: -4rem;
 			}
-			h4.sub-name {
+			h3.sub-name {
 				font-size: 1.1em;
 			}
 		     div.scroll {
@@ -270,8 +266,6 @@ nav {
 		}
 		@include hero;
 		background-attachment: scroll;
-		background-size: cover;
-		background-position: center bottom;
 		height: auto;
 	}
 	//========= SCSS LINES OF CODE =========
@@ -289,7 +283,7 @@ nav {
             padding-right: .7rem;*/ }
 			.dot {
                animation: blink 1s infinite;
-	           border-right: 0.3rem solid rgba(128,145,207, 0.9);
+	           border-right: 0.3rem solid  darken($color-fff, 0%);
                 padding-right: .7rem; }
 			   @keyframes blink {
 			   to {opacity: 0;}
@@ -313,6 +307,29 @@ nav {
 		position: relative;
 	}
 	@include hero;
+}
+
+#hero::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(0.5rem);
+    z-index: -1;
+    transform: scale(1.15);
+    -webkit-filter: blur(0.5rem);
+}
+
+@keyframes hue {
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
 }
 
 //======= ABOUT =======

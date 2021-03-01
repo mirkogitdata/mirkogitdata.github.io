@@ -162,12 +162,14 @@ img {
 
 //========= HERO =======
 @mixin hero {
-	background-image: url(lib/sass/mirkogitdata.github.io/image/hero-image2.png);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	height: 768px;
+	width: 100%;
+	height: 100vh;
+    background: url("image/hero-image.png") center/cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
+    -webkit-animation: hue 10s infinite alternate;
 }
 
 @mixin name {
@@ -178,7 +180,7 @@ img {
     font-family: $text-font;
     font-weight: 600;
 	//color: darken($text-fff, 33%);
-	color: lighten($color-secondary, 17%);
+	color: darken($color-fff, 0%);
 	text-transform: uppercase;
 }
 
