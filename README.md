@@ -5,9 +5,7 @@ You can see my portfolio <a href="https://mirkogitdata.github.io"  target="_blan
 The project consists of several parts, which make up the portfolio. In respositor you can find <b>HTML, CSS, SCSS, JS</b> files with two directories containing image files <b>jpg</b> and <b>png</b>.
 The website was developed using <b>HTML5</b> and <b>SASS / LESS</b> preprocessor technology or super <b>css</b> technique, which is located on the <b>Ruby</b> platform.
 
-It consists of three writings:
-
-style.scss variable.scss grid_system.scss In the compilation process we get the style.css file, which is located on the index.html page. he head tag contain source fonts for the font. Then aos, jquery, animatescroll codes for site integration.
+It consists of three writings: <b>style.scss variable.scss grid_system.scss</b> In the compilation process we get the style.css file, which is located on the index.html page. he head tag contain source fonts for the font. Then aos, jquery, animatescroll codes for site integration.
 
 At the bottom of the page are four <b>JavaScript</b> files, which perform the functions I have rendered. And at the very end is aos.init (), which causes you to perform the animation feature on the page.
 
