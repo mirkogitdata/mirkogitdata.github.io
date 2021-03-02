@@ -3,7 +3,7 @@ You can see my portfolio <a href="https://mirkogitdata.github.io"  target="_blan
 <br> 
 <br>
 The project consists of several parts, which make up the portfolio. In respositor you can find <b>HTML, CSS, SCSS, JS</b> files with two directories containing image files <b>jpg</b> and <b>png</b>.
-The website was developed using <b>HTML5</b> and <b>SASS / LESS</b> preprocessor technology or super css technique, which is located on the Ruby platform.
+The website was developed using <b>HTML5</b> and <b>SASS / LESS</b> preprocessor technology or super <b>css</b> technique, which is located on the <b>Ruby</b> platform.
 
 It consists of three writings:
 
