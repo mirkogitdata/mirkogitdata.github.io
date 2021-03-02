@@ -876,12 +876,11 @@ nav .soc a img {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-filter: blur(0.5rem);
-          filter: blur(0.5rem);
+  filter: blur(0.2rem);
   z-index: -1;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-  -webkit-filter: blur(0.3rem);
+  -webkit-filter: blur(0.2rem);
 }
 
 @-webkit-keyframes hue {

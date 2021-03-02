@@ -317,10 +317,10 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    filter: blur(0.5rem);
+    filter: blur(0.2rem);
     z-index: -1;
     transform: scale(1.15);
-    -webkit-filter: blur(0.3rem);
+    -webkit-filter: blur(0.2rem);
 }
 
 @keyframes hue {
