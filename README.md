@@ -2,7 +2,7 @@
 You can see my portfolio <a href="https://mirkogitdata.github.io"  target="_blank">Link to my portfolio</a>
 <br> 
 <br>
-The project consists of several parts, which make up the portfolio. In respositor you can find <b>HTML, CSS, SCSS, JS</b> files with two directories containing image files jpg and png.
+The project consists of several parts, which make up the portfolio. In respositor you can find <b>HTML, CSS, SCSS, JS</b> files with two directories containing image files <b>jpg</b> and <b>png</b>.
 The website was developed using <b>HTML5</b> and <b>SASS / LESS</b> preprocessor technology or super css technique, which is located on the Ruby platform.
 
 It consists of three writings:
@@ -17,6 +17,6 @@ I did not use the <b>Boostrap</b> framework because I wanted to highlight my <b>
 
 The site is developed with semantic tags in <b>HTML</b>. For better <b>SEO</b> placement. It is also optimized on the <b>PNG</b>, <b>JPG</b> file size.
 
-It is customizable for many device with responsive lines of code(media queries variables and GRID system). Because we are in the first period of mobile displaying.
+It is customizable for many device with responsive lines of code(<b>media queries</b> variables and <b>GRID</b> system). Because we are in the first period of mobile displaying.
 
 In short, about my portfolio.
