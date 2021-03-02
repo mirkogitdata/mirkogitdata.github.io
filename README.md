@@ -10,7 +10,7 @@ It consists of three writings: <b>style.scss variable.scss grid_system.scss</b> 
 
 At the bottom of the page are four <b>JavaScript</b> files, which perform the functions I have rendered. And at the very end is <b>aos.init ()</b>, which causes you to perform the animation feature on the page.
 
-In the portfolio section there are 6 products, which open links to three html pages and three pdf pages.
+In the portfolio section there are 6 products, which open links to three <b>html</b> pages and three <b>pdf</b> pages.
 
 I did not use the <b>Boostrap</b> framework because I wanted to highlight my <b>SASS/LESS</b> capabilities and using <b>GRID</b> for a vised-dimensional layout.
 
