@@ -16,6 +16,6 @@ I did not use the <b>Boostrap</b> framework because I wanted to highlight my <b>
 
 The site is developed with semantic tags in <b>HTML</b>. For better <b>SEO</b> placement. It is also optimized on the <b>PNG</b>, <b>JPG</b> file size.
 
-It is customizable for many device with <b>responsive</b> lines of code(<b>media queries</b> variables and <b>GRID</b> system). Because we are in the first period of mobile displaying.
+It is customizable for many device with <b>responsive</b> lines of code(<b>media queries</b> variables and <b>GRID</b> system). Because we are in the period of mobile displaying.
 
 In short, about my portfolio.
